@@ -1,0 +1,8 @@
+
+configuration {
+    modi: "window,drun,ssh,combi";
+    font: "Source Code Pro 13";
+    combi-modi: "window,drun,ssh";
+}
+
+@theme "~/.config/rofi/style-4.rasi"
