@@ -67,10 +67,11 @@ return require('packer').startup(function(use)
 	  }
   }
 
-  use("folke/zen-mode.nvim")
-  use("github/copilot.vim")
-  use("eandrju/cellular-automaton.nvim")
-  use("laytan/cloak.nvim")
+use("folke/zen-mode.nvim")
+use("github/copilot.vim")
+use("eandrju/cellular-automaton.nvim")
+use("laytan/cloak.nvim")
+use ({'sakhnik/nvim-gdb',branch = 'master'})
 
 end)
 
