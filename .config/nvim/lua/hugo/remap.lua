@@ -4,18 +4,17 @@ vim.keymap.set("n", "<leader>w", ":wall<CR>")
 vim.keymap.set("n", "<leader>q", ":wall<CR>:qall<CR>")
 
 vim.keymap.set("n", "<leader>c", "_i//<Esc>_")
+vim.keymap.set("n", "<leader>C",
+"{jf wywO/**<CR><Esc>pbi <Esc>o/<Esc>j_")
 
-vim.keymap.set("n", "<leader>t", "<cmd>!alacritty&<CR><CR>")
+vim.keymap.set("n", "<leader><CR>", "<cmd>!alacritty&<CR><CR>")
 
-vim.keymap.set("n", "<leader>kw", ":lua colorAll()<CR>")
-vim.keymap.set("n", "<leader>kd", ":lua colorAll('kanagawa-dragon')<CR>")
-vim.keymap.set("n", "<leader>kl", ":lua lotus('kanagawa-lotus')<CR>")
+vim.keymap.set("n", "<leader>tt", ":lua toggle_transparency()<CR>")
 
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 vim.keymap.set("n", "J", "mzJ`z")
-vim.keymap.set("n", "K", "$o<Esc>")
 
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")

@@ -25,7 +25,6 @@ alias ls='ls --color=auto'
 alias la='ls -Alhog'
 alias lc='ls -Ac'
 alias lg='la | grep'
-alias home='cd $HOME'
 alias dw='cd ~/Downloads/'
 alias dc='cd ~/Documents/'
 alias open='xdg-open $*'
@@ -40,6 +39,7 @@ alias printc='for C in {30..37}; do echo -en "\e[${C}m${C} "; done; echo;'
 alias make="make $@; make clean"
 alias lr="ranger"
 alias bg='cp $* ~/.feh ; feh --bg-center ~/.feh/$*'
+alias ss='history -1 | cut -d" " -f 4- | xargs sudo'
 
 
 function power(){
@@ -53,3 +53,4 @@ function command_not_found_handler(){
 }
 
 
+export LS_COLORS="*.c=04;32:*.h=04;36"
