@@ -25,7 +25,7 @@ bindings = [
     {key = "Return", mods = "Control|Shift", action = "SpawnNewInstance"}]
 
 [window]
-opacity = 0.85
+opacity = 0.55
 
 [mouse]
 hide_when_typing = true
