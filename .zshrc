@@ -5,7 +5,6 @@ HISTSIZE=1000
 SAVEHIST=1000
 setopt appendhistory
 
-# vim mode
 source ~/.zsh/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
@@ -17,9 +16,10 @@ zstyle ':completion:*' cache-path "$XDG_CACHE_HOME/zsh/.zcompcache"
 zstyle ':completion:*' menu select
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 
-
+export LS_COLORS="*.c=04;32:*.h=04;36"
 export LANG=en_US.UTF-8
 export EDITOR='nvim'
+
 alias grep='grep --color=auto'
 alias ls='ls --color=auto'
 alias la='ls -Alhog'
@@ -37,20 +37,11 @@ alias zshrc='nvim ~/.zshrc'
 alias wifi="~/.scripts/wifi.sh $@"
 alias printc='for C in {30..37}; do echo -en "\e[${C}m${C} "; done; echo;'
 alias make="make $@; make clean"
-alias lr="ranger"
-alias bg='cp $* ~/.feh ; feh --bg-center ~/.feh/$*'
-alias ss='history -1 | cut -d" " -f 4- | xargs sudo'
+alias lr="ranger $1"
+alias search='firefox "https://google.com/search?q=$*" &! exit'
 
-
-function power(){
-    upower -i $(upower -e | grep 'BAT') | grep --color=never -E "state|to full|to empty|percentage"
-}
-
-function search(){ firefox --search "$*" &! }
 
 function command_not_found_handler(){
     echo -e "\e[31m$1??"
 }
 
-
-export LS_COLORS="*.c=04;32:*.h=04;36"
