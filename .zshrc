@@ -39,7 +39,7 @@ alias printc='for C in {30..37}; do echo -en "\e[${C}m${C} "; done; echo;'
 alias make="make $@; make clean"
 alias lr="ranger $1"
 alias search='firefox "https://google.com/search?q=$*" &! exit'
-
+alias spotify='spotify & exit'
 
 function command_not_found_handler(){
     echo -e "\e[31m$1??"
