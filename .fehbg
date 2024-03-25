@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --no-fehbg --bg-fill '/home/hugo/Downloads/wallhaven-1p8oyw_1920x1200.png' 
+feh --no-fehbg --bg-center '/home/hugo/Downloads/wallhaven-1p8oyw_1920x1200.png' 
