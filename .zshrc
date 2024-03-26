@@ -32,12 +32,14 @@ alias :w='source ~/.zshrc'
 alias :q='exit'
 alias cd..='cd ..'
 alias zshrc='nvim ~/.zshrc'
-alias wifi="~/.scripts/wifi.sh $@"
+alias wifi="~/.scripts/wifi.sh"
 alias printc='for C in {30..37}; do echo -en "\e[${C}m${C} "; done; echo;'
 alias make="make $@; make clean"
 alias lr="ranger $1"
+alias ss='sudo pacman -S'
 alias spotify='spotify && exit'
 alias code='code && exit'
+
 
 function command_not_found_handler(){
     echo -e "\e[31m$1??"
