@@ -1,0 +1,34 @@
+
+import = [ "~/.config/alacritty/themes/themes/midnight-haze.toml" ]
+
+[font]
+size = 12.0
+
+[font.bold]
+family = "Sauce Code Pro Nerd Font"
+style = "bold"
+
+[font.bold_italic]
+family = "Sauce Code Pro Nerd Font"
+style = "Bold Italic"
+
+[font.italic]
+family = "Sauce Code Pro Nerd Font"
+style = "Italic"
+
+[font.normal]
+family = "Sauce Code Pro Nerd Font"
+style = "Regular"
+
+[keyboard]
+bindings = [
+    {key = "Return", mods = "Control|Shift", action = "SpawnNewInstance"}]
+
+[window]
+opacity = 0.90
+
+[mouse]
+hide_when_typing = true
+
+[terminal]
+osc52 = "CopyPaste"
