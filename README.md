@@ -25,3 +25,15 @@ then,
 `:so`
 `:PackerSync`
 `:PackerCompile`
+
+
+## remaps
+
+Caps lock -> control
+Alt_L -> esc (i use vim btw)
+
+
+## shell
+
+Files are split into scripts in .shell
+
