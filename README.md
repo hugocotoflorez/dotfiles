@@ -11,7 +11,7 @@ git clone https://github.com/hugocotoflorez/dotfiles
 
 create a simlink (nvim folder in .config must not exist)
 ```shell
-ln -s <repo path>/nvim ~ln -s <repo path>/nvim ~/.config/nvim.config/nvim
+ln -s <repo path>/nvim ~/.config/nvim.config/nvim
 ```
 
 install packer
