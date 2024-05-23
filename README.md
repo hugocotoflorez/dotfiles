@@ -30,6 +30,7 @@ then,
 ## remaps
 
 Caps lock -> control
+
 Alt_L -> esc (i use vim btw)
 
 
