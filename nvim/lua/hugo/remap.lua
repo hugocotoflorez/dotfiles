@@ -3,6 +3,7 @@ vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>w", ":wall<CR>")
 vim.keymap.set("n", "<leader>q", ":wall<CR>:qall<CR>")
 
+vim.keymap.set("n", "<leader>tp", ":lua require(\"precognition\").toggle()<cr>:HardTimeToggle<cr>")
 vim.keymap.set("n", "<leader>c", "_i//<Esc>_")
 vim.keymap.set("v", "<leader>c", "c/*\n/<Esc>kp")
 

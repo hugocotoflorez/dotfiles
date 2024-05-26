@@ -1,5 +1,5 @@
 
-import = [ "~/.config/alacritty/themes/themes/midnight-haze.toml" ]
+import = [ "~/.config/alacritty/themes/midnight-haze.toml" ]
 
 [font]
 size = 12.0
@@ -26,6 +26,7 @@ bindings = [
 
 [window]
 opacity = 0.90
+
 
 [mouse]
 hide_when_typing = true

@@ -11,13 +11,7 @@ return require('packer').startup(function(use)
       'nvim-telescope/telescope.nvim',-- tag = '0.1.0',
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
-  use({
-	  'rebelot/kanagawa.nvim',
-	  as = 'kanagawa',
-	  config = function()
-		  vim.cmd('colorscheme kanagawa')
-	  end
-  })
+  use({ 'rebelot/kanagawa.nvim', as = 'kanagawa'})
   use({
       "folke/trouble.nvim",
       config = function()
@@ -67,7 +61,8 @@ return require('packer').startup(function(use)
 		  {'rafamadriz/friendly-snippets'},
 	  }
   }
-
+  use ("tris203/precognition.nvim")
+  use ("takac/vim-hardtime")
 use("folke/zen-mode.nvim")
 use("github/copilot.vim")
 use("eandrju/cellular-automaton.nvim")

@@ -1,13 +1,15 @@
 #!/bin/sh
+
 alias grep='grep --color=auto'
 alias tree='eza -T'
 alias ls='eza --color=auto --icons=auto --sort=extension --group-directories-first'
-alias la='ls -Alh'
+alias la='ls -a'
+alias laa='ls -Alh'
 alias lg='ls -A | grep'
 alias lr="ranger "
 alias lt="eza --color=auto --sort=newest"
 alias dw='cd ~/Downloads/'
-alias open="xdg-open"
+alias open='firefox $(fzf) && exit'
 alias :w='source ~/.zshrc'
 alias :q='exit'
 alias cd..='cd ..'
@@ -17,6 +19,7 @@ alias printc='for C in {30..37}; do echo -en "\e[${C}m${C} "; done; echo;'
 alias ss='sudo pacman -S'
 alias es='setxkbmap es'
 alias en='setxkbmap us; ~/.config/bspwm/keymaps.sh'
+alias hugo='setxkbmap -option lv3:alt_switch hugo'
 alias snvim='sudo -E -s nvim' # perserve env
 alias make='${COPE}/make'
 alias gcc='${COPE}/gcc'
@@ -29,9 +32,10 @@ alias logisim="wmname compiz && logisim-evolution &! exit"
 alias c="clear"
 alias zzz="systemctl suspend"
 alias clock="alacritty -e tty-clock -SDcn &!"
-alias cat="bat --theme=1337"
+alias bat="bat --theme=1337"
 alias usc="firefox cv.usc.es/my/courses.php &! exit"
 alias gc="git commit -m"
+alias estat="cd ~/Documents/estat/examenes/; ls"
 
 alias e="mdless ~/examenes.md && date \"+ Today is %A %d\""
 

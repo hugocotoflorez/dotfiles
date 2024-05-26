@@ -99,14 +99,14 @@
 - `n <C-u>`: Scroll up half a screen.
 
 **Other Commands**
-- `i <C-c>`: Exit insert mode.
-- `n Q`: No operation.
 - `n <leader>w`: Save all files.
 - `n <leader>q`: Save all files and quit.
 - `n <leader>tt`: Toggle transparency.
 - `n <leader>c`: Insert // at first word.
 - `v U`: Change section to upercase.
 - `v u`: Change section to lowercase.
+- `tp`: Enter HARD (learning) mode.
+
 
 **Harpoon Commands**
 - `n <C-e>`: Toggle the Harpoon quick menu.
