@@ -6,6 +6,7 @@ picom &
 
 ~/.fehbg
 
+
 ~/.config/polybar/launch.sh
 
 alacritty
@@ -13,7 +14,6 @@ alacritty
 unclutter --start-hidden &
 
 xsetroot -cursor_name left_ptr
-
 xset s 300 5
 
 export XSECURELOCK_PASSWORD_PROMPT='asterisks'
