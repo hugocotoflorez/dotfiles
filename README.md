@@ -29,12 +29,16 @@ then,
 
 ## remaps
 
-Caps lock -> control
+Using Hugo's keymap
 
-Alt_L -> esc (i use vim btw)
-
+Numbers in alt+ home row
+Symbols in number row
+caps_lock as control (hold)
+escape in caps_lock (one click)
 
 ## shell
 
 Files are split into scripts in .shell
+
+
 
