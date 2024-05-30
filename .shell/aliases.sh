@@ -27,7 +27,7 @@ alias xrandr='${COPE}/xrandr'
 alias mips='java -Dswing.plaf.metal.controlFont=Consolas-15 -Dswing.plaf.metal.userFont=Consolas-30 -jar ~/Documents/fundcomp/Simula3MSv4_12.jar'
 alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias qute="qutebrowser &! exit"
-alias v=nvim
+alias n=nvim
 alias logisim="wmname compiz && logisim-evolution &! exit"
 alias c="clear"
 alias zzz="systemctl suspend"
@@ -35,7 +35,7 @@ alias clock="alacritty -e tty-clock -SDcn &!"
 alias bat="bat --theme=1337"
 alias usc="firefox cv.usc.es/my/courses.php &! exit"
 alias gc="git commit -m"
-alias estat="cd ~/Documents/estat/examenes/; ls"
 
+alias estat="cd ~/Documents/estat/examenes/; ls"
 alias e="mdless ~/examenes.md && date \"+ Today is %A %d\""
 
