@@ -19,4 +19,5 @@ unclutter --start-hidden &
 
 xsetroot -cursor_name left_ptr
 xset s 300 5
-xss-lock -n /usr/lib/xsecurelock/dimmer -l -- xsecurelock &
+# uncomment to enable password after suspend
+#xss-lock -n /usr/lib/xsecurelock/dimmer -l -- xsecurelock &

@@ -19,6 +19,6 @@ bspc config gapless_monocle      true
 bspc rule -a Spotify desktop='^5'
 
 
-~/.config/bspwm/hugo-keymap.sh &
+~/.config/bspwm/keymaps.sh &
 ~/.config/bspwm/autostart.sh &
 
