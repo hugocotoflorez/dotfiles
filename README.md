@@ -1,5 +1,4 @@
 
-## nvim installation
 
 ### quick setup
 
@@ -29,25 +28,24 @@ then,
 ## remaps
 
 Using custom keymap (via customization)
- - Layer 0
- Default qwerty us
- - Layer 1 ( toggle on Fn1 )
- Arrow keys in hjkl
- - Layer 2 ( hold space )
- Nums in home row
- symbols in q row
- \~ in tab
- - Layer 3 ( toggle in Fn2 )
- Mouse movement in hjkl
- Whell scroll in a, s
- mouse click in d, f
-
- -On every layer
- caps lock (hold) -> control
- caps lock (tap) -> escape
-
- Also some functionality keys in some layer
-
+ - Layer 0      \\
+ Default qwerty us\\
+ - Layer 1 ( toggle on Fn1 )\\
+ Arrow keys in hjkl\\
+ - Layer 2 ( hold space )\\
+ Nums in home row\\
+ symbols in q row\\
+ \~ in tab\\
+ - Layer 3 ( toggle in Fn2 )\\
+ Mouse movement in hjkl\\
+ Whell scroll in a, s\\
+ mouse click in d, f\\
+\\
+ -On every layer\\
+ caps lock (hold) -> control\\
+ caps lock (tap) -> escape\\
+\\
+ Also some functionality keys in some layer\\
 
 
 
