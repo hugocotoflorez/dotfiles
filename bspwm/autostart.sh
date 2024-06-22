@@ -13,7 +13,7 @@ picom &
 
 ~/.config/polybar/launch.sh
 
-alacritty
+alacritty &
 
 unclutter --start-hidden &
 

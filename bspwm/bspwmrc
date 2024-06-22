@@ -4,7 +4,7 @@ bspc monitor eDP-1 -d I II III IV V #laptop screen
 
 # second monitor
 if [[ $(xrandr -q | grep "HDMI-1 connected") ]]; then
-    bspc monitor HDMI-1 -d VI VII VIII IX X
+    ~/.scripts/init_screen.sh
 fi
 
 bspc config border_width         3

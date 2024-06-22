@@ -28,7 +28,7 @@
 - `gg`: Jump to the top.
 - `G`: Jump to the bottom.
 - `:<n>`: Jump to line 'n'.
-- `%`: Move to the matching symbol
+- `%`: Move to the matching symbol.
 - `n vi<c>`: Select between <c>.
 - `n di<c>`: Delete between <c>.
 
@@ -55,7 +55,7 @@
 - `o`: Insert mode, new line.
 - `O`: Insert mode, new line above.
 - `v`: Visual mode.
-- `V`: Visual lines mode.
+- `V`: Visual line mode.
 - `C-v`: Visual block mode.
 - `A`: Insert mode at end of line.
 - `I`: Insert mode at start of line.
@@ -76,7 +76,7 @@
 - `*`: Insert the word.
 
 **Debugger**
-- `<leader>dd`: Start debuggind session
+- `<leader>dd`: Start debugging session
 - `:GdbRun`: Run program
 - `:Gdb exit`: Exit session
 - `<Esc>C-w k`: Go to program
@@ -90,8 +90,8 @@
 **Visual Mode Movement Mappings**
 - `v J`: Move selection down.
 - `v K`: Move selection up.
-- `v <`: Indent selection up.
-- `v >`: Unindent selection up.
+- `v >`: Indent selection.
+- `v <`: Outdent selection.
 
 **Navigation and Screen Adjustment Mappings**
 - `n J`: Join current line with next.
@@ -103,9 +103,13 @@
 - `n <leader>q`: Save all files and quit.
 - `n <leader>tt`: Toggle transparency.
 - `n <leader>c`: Insert // at first word.
-- `v U`: Change section to upercase.
+- `v U`: Change section to uppercase.
 - `v u`: Change section to lowercase.
 - `tp`: Enter HARD (learning) mode.
+- `v <n> C-A`: Add n to highlighted number.
+- `v <n> C-X`: Subtract n to highlighted number.
+- `v <n> g C-A`: Add n to highlighted number (stair addition)
+- `v <n> g C-X`: Subtract n to highlighted number.
 
 
 **Harpoon Commands**
@@ -120,7 +124,7 @@
 - `n <leader>6`: Navigate to file in Harpoon slot 6.
 
 **File Operations and Formatting**
-- `n <leader>f`: Format the current file.
+- `n <leader><leader>`: Format the current file.
 - `n <leader>x`: Give execution permissions to the file.
 
 **Quickfix and Location List Navigation**
