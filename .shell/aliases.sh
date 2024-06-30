@@ -35,7 +35,6 @@ alias clock="alacritty -e tty-clock -SDcn &!"
 alias bat="bat --theme=1337"
 alias usc="firefox cv.usc.es/my/courses.php &! exit"
 alias gc="git commit -m"
-
-alias estat="cd ~/Documents/estat/examenes/; ls"
-alias e="mdless ~/examenes.md && date \"+ Today is %A %d\""
+alias spoty="spotify &! exit"
+alias github="firefox https://github.com/hugocotoflorez/$1 &!"
 

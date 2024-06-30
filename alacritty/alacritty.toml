@@ -1,23 +1,22 @@
-
 import = [ "~/.config/alacritty/themes/onedark.toml" ]
 
 [font]
 size = 12.0
 
 [font.bold]
-family = "Sauce Code Pro Nerd Font"
+family = "sauce code pro nerd font"
 style = "bold"
 
 [font.bold_italic]
-family = "Sauce Code Pro Nerd Font"
+family = "sauce code pro nerd font"
 style = "Bold Italic"
 
 [font.italic]
-family = "Sauce Code Pro Nerd Font"
+family = "sauce code pro nerd font"
 style = "Italic"
 
 [font.normal]
-family = "Sauce Code Pro Nerd Font"
+family = "sauce code pro nerd font"
 style = "Regular"
 
 [keyboard]
