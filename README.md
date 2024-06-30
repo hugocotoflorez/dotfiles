@@ -1,6 +1,8 @@
+### About
 
+Dotfiles from my Arch Linux - Laptop setup! Updated weekly.
 
-### quick setup
+### nvim quick setup
 
 clone this repo
 ```shell
