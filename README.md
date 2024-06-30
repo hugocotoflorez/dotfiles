@@ -32,8 +32,8 @@ then,
  - `es`: Spanish layout
  - `en`: Us qwerty layout with the following changes:
 
- -- caps lock (hold) -> control
- -- caps lock (tap) -> escape
+ > caps lock (hold) -> control
+ > caps lock (tap) -> escape
 
  Change it from terminal
 
