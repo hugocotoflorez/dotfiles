@@ -13,6 +13,9 @@ alias open='firefox $(fzf) && exit'
 alias :w='source ~/.zshrc'
 alias :q='exit'
 alias cd..='cd ..'
+alias ..='cd ..'
+alias ....='cd ../..'
+alias ......='cd ../../..'
 alias aliases='$EDITOR ~/.shell/aliases.sh'
 alias wifi="nmcli device wifi connect"
 alias printc='for C in {30..37}; do echo -en "\e[${C}m${C} "; done; echo;'
@@ -35,6 +38,4 @@ alias clock="alacritty -e tty-clock -SDcn &!"
 alias bat="bat --theme=1337"
 alias usc="firefox cv.usc.es/my/courses.php &! exit"
 alias gc="git commit -m"
-alias spoty="spotify &! exit"
-alias github="firefox https://github.com/hugocotoflorez/$1 &!"
 

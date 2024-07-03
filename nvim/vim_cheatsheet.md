@@ -14,7 +14,7 @@
 - `<n><d>`: Move 'n' lines in 'd' direction.
 - `w`: Move to the beginning of the next word.
 - `b`: Move to the beginning of the previous word.
-- `_`: Move to the start of the line.
+- `^`: Move to the start of the line. (or `_`)
 - `$`: Move to the end of the line.
 - `0`: Move to the first char of the line.
 - `f<char>`: Jump forward to 'char'.
@@ -31,6 +31,7 @@
 - `%`: Move to the matching symbol.
 - `n vi<c>`: Select between <c>.
 - `n di<c>`: Delete between <c>.
+- `n ci<c>`: Change between <c>.
 
 **Copy, Paste, Delete**
 - `d`: Delete.
@@ -106,10 +107,10 @@
 - `v U`: Change section to uppercase.
 - `v u`: Change section to lowercase.
 - `tp`: Enter HARD (learning) mode.
-- `v <n> C-A`: Add n to highlighted number.
-- `v <n> C-X`: Subtract n to highlighted number.
-- `v <n> g C-A`: Add n to highlighted number (stair addition)
-- `v <n> g C-X`: Subtract n to highlighted number.
+- `v <n> C-A`: Add n to highlighted number(s).
+- `v <n> C-X`: Subtract n to highlighted number(s).
+- `v <n> g C-A`: Add n to highlighted number(s) (stair addition)
+- `v <n> g C-X`: Subtract n to highlighted number(s).
 
 
 **Harpoon Commands**
