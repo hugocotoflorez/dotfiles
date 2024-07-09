@@ -9,8 +9,8 @@ fi
 
 bspc config border_width         3
 bspc config window_gap           10
-#bspc config normal_border_color  "#76946a"
-bspc config focused_border_color "#76946a"
+bspc config normal_border_color  "#2c2c3d"
+#bspc config focused_border_color "#76946a"
 bspc config focused_border_color "#d8dee9"
 bspc config split_ratio          0.52
 bspc config borderless_monocle   true
