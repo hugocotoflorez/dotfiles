@@ -2,7 +2,7 @@
 {
     // "layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 30, // Waybar height (to be removed for auto height)
+    "height": 36, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
@@ -23,7 +23,7 @@
     // Modules configuration
     "hyprland/workspaces": {
         "disable-scroll": true,
-        "format":" {name} ",
+        "format":"  {name}  ",
         "format-incons":{
             "1": "",
             "active": ""
@@ -121,14 +121,17 @@
             "warning": 20,
             "critical": 10
         },
-        "format": "{icon}",
+        "format": "{icon} ",
         //"format": "{capacity}% {icon}",
         //"format-charging": "{icon}",
         //"format-plugged": "{capacity}% ",
         "format-alt": "{capacity}% {time}",
+        "format-critical": "{icon}   {capacity}% ({time})",
+        "format-warning":  "{icon}   {capacity}%",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
-        "format-icons": ["", "", "", "", "", ""]
+        "format-icons": ["", "", "", "", "", ""],
+        "interval": 15
     },
     "battery#bat2": {
         "bat": "BAT2"
@@ -152,18 +155,18 @@
         //"format-linked": "{ifname} (No IP) ",
         //"format-disconnected": "Disconnected ⚠",
         //"format-alt": "{ifname}: {ipaddr}/{cidr}"
-        "format": "{icon}",
+        "format": "{icon} ",
         "format-disconnected": "󰤭",
         "format-icons":[ "󰤯", "󰤟", "󰤢", "󰤥","󰤨" ]
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{icon}",
+        "format": "{icon} ",
         "format-bluetooth": "{icon} ",
-        "format-bluetooth-muted": " ",
-        "format-muted": "",
-        "format-source": "",
-        "format-source-muted": "",
+        "format-bluetooth-muted": "  ",
+        "format-muted": " ",
+        "format-source": " ",
+        "format-source-muted": " ",
         "format-icons": ["", "", ""],
         "on-click": "pavucontrol"
         },
