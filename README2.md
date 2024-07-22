@@ -1,10 +1,10 @@
 # Pictures (hyprland)
 
-<img src="https://raw.githubusercontent.com/hugocotoflorez/dotfiles/main/syspictures/picture1.png" align="center">
-<img src="https://raw.githubusercontent.com/hugocotoflorez/dotfiles/main/syspictures/picture2.png" align="center">
-<img src="https://raw.githubusercontent.com/hugocotoflorez/dotfiles/main/syspictures/picture3.png" align="center">
-<img src="https://raw.githubusercontent.com/hugocotoflorez/dotfiles/main/syspictures/picture4.png" align="center">
-<img src="https://raw.githubusercontent.com/hugocotoflorez/dotfiles/main/syspictures/picture5.png" align="center">
+<img src="https://raw.githubusercontent.com/hugocotoflorez/dotfiles/main/syspictures/picture1.png" align="center" alt="picture">
+<img src="https://raw.githubusercontent.com/hugocotoflorez/dotfiles/main/syspictures/picture2.png" align="center" alt="picture">
+<img src="https://raw.githubusercontent.com/hugocotoflorez/dotfiles/main/syspictures/picture3.png" align="center" alt="picture">
+<img src="https://raw.githubusercontent.com/hugocotoflorez/dotfiles/main/syspictures/picture4.png" align="center" alt="picture">
+<img src="https://raw.githubusercontent.com/hugocotoflorez/dotfiles/main/syspictures/picture5.png" align="center" alt="picture">
 
 ### How to set Caps as Esc and Control
 
