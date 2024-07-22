@@ -1,3 +1,11 @@
+# Pictures (hyprland)
+
+<img src="https://raw.githubusercontent.com/hugocotoflorez/dotfiles/main/syspictures/picture1.png" align="center">
+<img src="https://raw.githubusercontent.com/hugocotoflorez/dotfiles/main/syspictures/picture2.png" align="center">
+<img src="https://raw.githubusercontent.com/hugocotoflorez/dotfiles/main/syspictures/picture3.png" align="center">
+<img src="https://raw.githubusercontent.com/hugocotoflorez/dotfiles/main/syspictures/picture4.png" align="center">
+<img src="https://raw.githubusercontent.com/hugocotoflorez/dotfiles/main/syspictures/picture5.png" align="center">
+
 ### How to set Caps as Esc and Control
 
 Using `caps2esc`, follow this steps:
@@ -15,15 +23,7 @@ Using `caps2esc`, follow this steps:
 
 ### Font used for ui
 
-SF (San Francisco) mono font pathed with Nerd Font patcher
-`https://github.com/epk/SF-Mono-Nerd-Font`
-
-```sh
-git clone https://github.com/epk/SF-Mono-Nerd-Font
-cd SF-Mono-Nerd-Font
-sudo mkdir /usr/share/fonts/SF-Mono-Nerd-Font
-sudo cp ./*.otf /usr/share/fonts/SF-Mono-Nerd-Font/
-```
+SF (San Francisco) mono font (not patched with Nerd Font patcher)
 
 ### Cursor theme
 - Install volantes

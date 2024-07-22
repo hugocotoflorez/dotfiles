@@ -37,6 +37,7 @@ alias open='firefox $(fzf) && exit'
 alias logisim="wmname compiz && logisim-evolution &! exit" # bspwm error solved
 alias snvim='sudo -E -s nvim' # perserve env
 alias clock="alacritty -e tty-clock -SDcn &!"
+alias macc="alacritty --hold --command=\"macchina\" &!"
 alias mips='java -Dswing.plaf.metal.controlFont=Consolas-15 -Dswing.plaf.metal.userFont=Consolas-30 -jar ~/Documents/fundcomp/Simula3MSv4_12.jar'
 alias ss='sudo pacman -S'
 alias zzz="systemctl suspend"
@@ -44,6 +45,7 @@ alias zzz="systemctl suspend"
 # tools launchers
 alias bluetooth="~/.config/wofi/bluetooth.sh"
 alias batt="~/.scripts/battery.sh"
+alias fetch="alacritty --hold -e ~/code/hfetch/hfetch &!"
 
 # shorteners
 alias n=nvim
