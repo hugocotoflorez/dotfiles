@@ -123,7 +123,7 @@
         },
         "format": "{icon}    {capacity}%",
         //"format": "{capacity}% {icon}",
-        //"format-charging": "{icon}",
+        "format-charging": "",
         //"format-plugged": "{capacity}% ",
         //"format-alt": "{capacity}% {time}",
         "format-critical": "{icon}    {capacity}% ({time})",

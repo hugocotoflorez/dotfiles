@@ -28,6 +28,7 @@ glfw
 glm
 grim
 grub
+guvcview
 htop
 hypridle
 hyprland
@@ -63,16 +64,17 @@ neovim
 networkmanager
 nm-connection-editor
 npm
+nvidia
 nvidia-lts
 obs-studio
 p7zip
 pavucontrol
 pipewire
+pipewire-v4l2
 playerctl
 power-profiles-daemon
 pulseaudio
 pulseaudio-alsa
-pulseaudio-bluetooth
 python-adblock
 python-pip
 python-pywal
@@ -105,6 +107,7 @@ tty-clock
 ueberzug
 unrar
 unzip
+v4l2loopback-dkms
 valgrind
 virtualbox
 visual-studio-code-bin
@@ -116,6 +119,7 @@ wireplumber
 wl-clipboard
 wmname
 wofi
+xdg-desktop-portal
 xf86-video-nouveau
 xorg-xinput
 xorg-xrandr
