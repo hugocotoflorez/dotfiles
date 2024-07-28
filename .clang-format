@@ -55,9 +55,6 @@ Language: Cpp
 #   LS_Auto (in configuration: Auto) Automatic detection based on the input.
 Standard: Auto
 
-# Pointer and reference alignment style. Possible values: Left, Right, Middle.
-PointerAlignment: Left
-
 # AccessModifierOffset (int)
 # The extra indent or outdent of access modifiers, e.g. public:.
 AccessModifierOffset: 0
@@ -75,7 +72,7 @@ AccessModifierOffset: 0
 #   BAS_AlwaysBreak (in configuration: AlwaysBreak) Always break after an open bracket, if the parameters don’t fit on a single line, e.g.:
 #   someLongFunction(
 #       argument1, argument2);
-AlignAfterOpenBracket: false
+AlignAfterOpenBracket: Align
 
 # AlignConsecutiveAssignments (bool)
 # If true, aligns consecutive assignments.
@@ -84,6 +81,10 @@ AlignAfterOpenBracket: false
 # int b    = 23;
 # int ccc  = 23;
 AlignConsecutiveAssignments: true
+
+# AlignConsecutiveDeclarations (bool)
+# if true, align variable names in multiple declarations.
+AlignConsecutiveDeclarations: true
 
 # AlignEscapedNewlinesLeft (bool)
 # If true, aligns escaped newlines as far left as possible. Otherwise puts them into the right-most column.
@@ -94,11 +95,15 @@ AlignEscapedNewlinesLeft: true
 # Specifically, this aligns operands of a single expression that needs to be split over multiple lines, e.g.:
 # int aaa = bbbbbbbbbbbbbbb +
 #           ccccccccccccccc;
-AlignOperands: false
+AlignOperands: true
 
 # AlignTrailingComments (bool)
 # If true, aligns trailing comments.
 AlignTrailingComments: true
+
+# AllowAllConstructorInitializersOnNextLine (bool)
+# if true, break before constructor initializer
+AllowAllConstructorInitializersOnNextLine: true
 
 # AllowAllParametersOfDeclarationOnNextLine (bool)
 # Allow putting all parameters of a function declaration onto the next line even if BinPackParameters is false.
@@ -128,6 +133,11 @@ AllowShortIfStatementsOnASingleLine: false
 # AllowShortLoopsOnASingleLine (bool)
 # If true, while (true) continue; can be put on a single line.
 AllowShortLoopsOnASingleLine: false
+
+# AlwaysBreakAfterReturnType (value)
+# One of None, All, TopLevel. Break after return type
+# in a function declaration
+AlwaysBreakAfterReturnType: TopLevel
 
 # AlwaysBreakBeforeMultilineStrings (bool)
 # If true, always break before multiline string literals.
@@ -203,7 +213,7 @@ BreakConstructorInitializersBeforeComma: false
 # ColumnLimit (unsigned)
 # The column limit.
 # A column limit of 0 means that there is no column limit. In this case, clang-format will respect the input’s line breaking decisions within statements unless they contradict other rules.
-ColumnLimit: 80
+ColumnLimit: 75
 
 # CommentPragmas (std::string)
 # A regular expression that describes comments with special meaning, which should not be split into lines or otherwise changed.
@@ -272,7 +282,7 @@ IndentCaseLabels: true
 
 # IndentFunctionDeclarationAfterType (bool)
 # If true, indent when breaking function declarations which are not also definitions after the type.
-IndentFunctionDeclarationAfterType: false
+IndentFunctionDeclarationAfterType: true
 
 # IndentWrappedFunctionNames (bool)
 # Indent if a function definition or declaration is wrapped after the type.
@@ -280,7 +290,7 @@ IndentFunctionDeclarationAfterType: false
 
 # KeepEmptyLinesAtTheStartOfBlocks (bool)
 # If true, empty lines at the start of blocks are kept.
-#KeepEmptyLinesAtTheStartOfBlocks:
+KeepEmptyLinesAtTheStartOfBlocks: false
 
 # MacroBlockBegin (std::string)
 # A regular expression matching macros that start a block.
@@ -344,19 +354,19 @@ PenaltyReturnTypeOnItsOwnLine: 20
 #   PAS_Left (in configuration: Left) Align pointer to the left.
 #   PAS_Right (in configuration: Right) Align pointer to the right.
 #   PAS_Middle (in configuration: Middle) Align pointer in the middle.
-#PointerAlignment:
+PointerAlignment: Right
 
 # ReflowComments (bool)
 # If true, clang-format will attempt to re-flow comments.
-#ReflowComments: true (from v3.9)
+ReflowComments: true
 
 # SortIncludes (bool)
 # If true, clang-format will sort #includes.
-#SortIncludes: false (from v3.9)
+SortIncludes: true
 
 # SpaceAfterCStyleCast (bool)
 # If true, a space may be inserted after C style casts.
-SpaceAfterCStyleCast: false
+SpaceAfterCStyleCast: true
 
 # SpaceBeforeAssignmentOperators (bool)
 # If false, spaces will be removed before assignment operators.

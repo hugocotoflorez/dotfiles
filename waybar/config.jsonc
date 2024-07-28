@@ -93,7 +93,7 @@
         // "timezone": "America/New_York",
         //"format": "{:%a %b %e  %I:%M%p}",
         "exec": "date +\"%a %b %e  %_I:%M %p\"",
-        "interval": 5
+        "interval": 15
     },
     "cpu": {
         "format": "{usage}% ",
@@ -121,13 +121,13 @@
             "warning": 20,
             "critical": 10
         },
-        "format": "{icon} ",
+        "format": "{icon}    {capacity}%",
         //"format": "{capacity}% {icon}",
         //"format-charging": "{icon}",
         //"format-plugged": "{capacity}% ",
-        "format-alt": "{capacity}% {time}",
-        "format-critical": "{icon}   {capacity}% ({time})",
-        "format-warning":  "{icon}   {capacity}%",
+        //"format-alt": "{capacity}% {time}",
+        "format-critical": "{icon}    {capacity}% ({time})",
+        "format-warning":  "{icon}    {capacity}%",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
         "format-icons": ["", "", "", "", "", ""],
@@ -155,13 +155,13 @@
         //"format-linked": "{ifname} (No IP) ",
         //"format-disconnected": "Disconnected ⚠",
         //"format-alt": "{ifname}: {ipaddr}/{cidr}"
-        "format": "{icon} ",
-        "format-disconnected": "󰤭",
-        "format-icons":[ "󰤯", "󰤟", "󰤢", "󰤥","󰤨" ]
+        "format": "{icon}  {essid}",
+        "format-disconnected": "󰣼",
+        "format-icons":[ "󰣾", "󰣴", "󰣶", "󰣸","󰣺" ]
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{icon} ",
+        "format": "{icon}  {volume}%",
         "format-bluetooth": "{icon} ",
         "format-bluetooth-muted": "  ",
         "format-muted": " ",

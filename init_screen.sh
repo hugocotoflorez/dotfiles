@@ -1,1 +1,0 @@
-/home/hugo/.scripts/init_screen.sh

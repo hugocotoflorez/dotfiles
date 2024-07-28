@@ -10,3 +10,4 @@ export MANROFFOPT="-P -c"
 export LESS='-R --use-color -Dd+r$Du+b$'
 export VK_ICD_FILENAMES="/usr/share/vulkan/icd.d/nouveau_icd.x86_64.json"
 export GRIM_DEFAULT_DIR="~/Downloads/"
+export XDG_PICTURES_DIR="~/Downloads/"

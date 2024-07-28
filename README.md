@@ -1,8 +1,17 @@
-### About
+# About
 
 Dotfiles from my Arch Linux - Laptop setup! Updated weekly.
 
-### nvim quick setup
+# [Hyprland]
+
+<img src="https://raw.githubusercontent.com/hugocotoflorez/dotfiles/main/syspictures/picture1.png" align="center" alt="picture">
+<img src="https://raw.githubusercontent.com/hugocotoflorez/dotfiles/main/syspictures/picture2.png" align="center" alt="picture">
+<img src="https://raw.githubusercontent.com/hugocotoflorez/dotfiles/main/syspictures/picture3.png" align="center" alt="picture">
+<img src="https://raw.githubusercontent.com/hugocotoflorez/dotfiles/main/syspictures/picture4.png" align="center" alt="picture">
+<img src="https://raw.githubusercontent.com/hugocotoflorez/dotfiles/main/syspictures/picture5.png" align="center" alt="picture">
+
+
+# nvim quick setup
 
 clone this repo
 ```shell
@@ -27,15 +36,29 @@ then,
 `:PackerCompile`
 
 
-### Remaps & languages
+# Remaps & languages
 
- - `es`: Spanish layout
- - `en`: Us qwerty layout with the following changes:
+ - `caps lock (hold)` -> control
+ - `caps lock (tap)` -> escape
 
- >- caps lock (hold) -> control
 
- >- caps lock (tap) -> escape
+### How to set Caps as Esc and Control
 
- Change it from terminal
+Using `caps2esc`, follow this steps:
 
+- Install it (Arch) `pacman -S interception-caps2lock`
+- Edit `/etc/interception/udevmon.d/caps2esc.yaml`
+- Write this :
+``` yaml
+- JOB: intercept -g $DEVNODE | caps2esc | uinput -d $DEVNODE
+  DEVICE:
+    EVENTS:
+      EV_KEY: [KEY_CAPSLOCK, KEY_ESC]
+```
+- Make sure udevmon is enabled and running
+
+
+### Cursor theme
+- Install volantes
+- Run `gsettings set org.gnome.desktop.interface cursor-theme 'volantes_cursors'`
 

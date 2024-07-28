@@ -1,8 +1,0 @@
-
-configuration {
-    modi: "window,drun";
-    font: "sauce code pro nerd font 14";
-    combi-modi: "window,drun";
-}
-
-@theme "~/.config/rofi/style-4.rasi"

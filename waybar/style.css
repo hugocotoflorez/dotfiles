@@ -2,11 +2,11 @@
     font-family: SF Pro Display, SF Mono;
     font-size: 16px;
     background-color: transparent;
-    color: #000000;
+    color: rgba(242, 242, 247, 0.7); /* default color */
 }
 
 window#waybar {
-    background-color: rgba(242, 242, 247, 0.7);
+    background-color: rgba(14, 14, 17, 0.85);
     /*
     border-bottom: 3px solid rgba(100, 114, 125, 0.5);
     color: #000000;
@@ -70,7 +70,7 @@ button:hover {
 
  */
 #workspaces button.active {
-    background-color: rgba(242, 242, 247, 0.5);
+    background-color: rgba(14, 14, 17, 0.7);
 }
 
 #workspaces button.urgent {
@@ -131,7 +131,6 @@ button:hover {
 #battery {
     /* background-color: #ffffff; */
     background-color: transparent;
-    color: #000000;
 }
 
 #battery.charging, #battery.plugged {
@@ -172,7 +171,6 @@ label:focus {
 #cpu {
     /* background-color: #2ecc71; */
     background-color: transparent;
-    color: #000000;
 }
 
 #memory {
@@ -203,7 +201,6 @@ label:focus {
 #pulseaudio {
     /* background-color: #f1c40f; */
     background-color: transparent;
-    color: #000000;
 }
 
 #pulseaudio.muted {
@@ -214,7 +211,6 @@ label:focus {
 #wireplumber {
     /* background-color: #fff0f5; */
     background-color: transparent;
-    color: #000000;
 }
 
 #wireplumber.muted {

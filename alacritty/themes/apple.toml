@@ -1,0 +1,29 @@
+
+# Colors (Apple)
+
+# Default colors
+[colors.primary]
+background = '#3a3a3c'
+foreground = '#c7c7cc'
+
+# Normal colors
+[colors.normal]
+black   = '#1c1c1e'
+red     = '#ff3b30'
+green   = '#28cd41'
+yellow  = '#0ffcc0'
+blue    = '#0a84ff'
+magenta = '#af52de'
+cyan    = '#55bef0'
+white   = '#f2f2f7'
+
+# Bright colors
+[colors.bright]
+black   = '#1c1c1e'
+red     = '#ff3b30'
+green   = '#28cd41'
+yellow  = '#0ffcc0'
+blue    = '#0a84ff'
+magenta = '#af52de'
+cyan    = '#55bef0'
+white   = '#f2f2f7'
