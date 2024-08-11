@@ -46,12 +46,15 @@ alias zzz="systemctl suspend"
 alias bluetooth="~/.config/wofi/bluetooth.sh"
 alias batt="~/.scripts/battery.sh"
 alias fetch="alacritty --hold -e ~/code/hfetch/hfetch &!"
+alias odf="~/onedark-factory/bin/python ~/onedark-factory/conv.py"
 
 # shorteners
 alias n=nvim
 alias c="clear"
 alias gc="git commit -m"
+alias gp="git push"
 alias wifi="nmcli device wifi connect" # wifi <tab>
+alias icat="kitten icat"
 
 # others
 alias aliases='$EDITOR ~/.shell/aliases.sh'

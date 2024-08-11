@@ -61,7 +61,6 @@
 - `A`: Insert mode at end of line.
 - `I`: Insert mode at start of line.
 
-
 **Movement in Insert Mode**
 - `Alt-I`: Jump to the start.
 - `Alt-A`: Jump to the end.
@@ -112,7 +111,6 @@
 - `v <n> g C-A`: Add n to highlighted number(s) (stair addition)
 - `v <n> g C-X`: Subtract n to highlighted number(s).
 
-
 **Harpoon Commands**
 - `n <C-e>`: Toggle the Harpoon quick menu.
 - `n <leader>a`: Add the current file to Harpoon marks.
@@ -162,3 +160,13 @@
 **Zen Mode**
 - `<leader>zz`: Toggle zen-mode
 - `<leader>zZ`: Toggle zen-mode (minimalist)
+
+- **Fold the code**:
+  - `za`: Toggle the fold state at the current line. If the code is expanded, it will be folded; if it is folded, it will be expanded.
+  - `zM`: Close all folds in the file.
+  - `zR`: Open all folds in the file.
+  - `zc`: Close (fold) the fold at the current line.
+  - `zo`: Open (unfold) the fold at the current line.
+  - `]z`: Move to the next fold.
+  - `[z`: Move to the previous fold.
+

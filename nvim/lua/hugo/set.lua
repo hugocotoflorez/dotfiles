@@ -29,3 +29,4 @@ vim.opt.colorcolumn = "80"
 
 vim.opt.updatetime = 50
 
+vim.opt.foldmethod = 'marker'

@@ -135,9 +135,9 @@ AllowShortIfStatementsOnASingleLine: false
 AllowShortLoopsOnASingleLine: false
 
 # AlwaysBreakAfterReturnType (value)
-# One of None, All, TopLevel. Break after return type
+# One of None, All, TopLevelDefinitions. Break after return type
 # in a function declaration
-AlwaysBreakAfterReturnType: TopLevel
+AlwaysBreakAfterReturnType: TopLevelDefinitions
 
 # AlwaysBreakBeforeMultilineStrings (bool)
 # If true, always break before multiline string literals.
@@ -284,9 +284,10 @@ IndentCaseLabels: true
 # If true, indent when breaking function declarations which are not also definitions after the type.
 IndentFunctionDeclarationAfterType: true
 
+
 # IndentWrappedFunctionNames (bool)
 # Indent if a function definition or declaration is wrapped after the type.
-#IndentWrappedFunctionNames:
+# IndentWrappedFunctionNames: true
 
 # KeepEmptyLinesAtTheStartOfBlocks (bool)
 # If true, empty lines at the start of blocks are kept.

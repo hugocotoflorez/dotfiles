@@ -2,11 +2,11 @@
     font-family: SF Pro Display, SF Mono;
     font-size: 16px;
     background-color: transparent;
-    color: rgba(242, 242, 247, 0.7); /* default color */
+    color: #abb2bf; /* default color */
 }
 
 window#waybar {
-    background-color: rgba(14, 14, 17, 0.85);
+    background-color: #282c34;
     /*
     border-bottom: 3px solid rgba(100, 114, 125, 0.5);
     color: #000000;
@@ -28,6 +28,7 @@ window#waybar.solo {
 }
 */
 
+    /*
 window#waybar.termite {
     background-color: #3F3F3F;
 }
@@ -36,6 +37,7 @@ window#waybar.chromium {
     background-color: #000000;
     border: none;
 }
+     */
 
 button {
     /* Use box-shadow instead of border so the text isn't offset */
@@ -48,7 +50,7 @@ button {
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 button:hover {
     background: inherit;
-    box-shadow: inset 0 -3px #ffffff;
+    box-shadow: inset 0 -3px #abb2bf;
 }
 
 /* you can set a style on hover for any module like this */
@@ -60,7 +62,7 @@ button:hover {
 #workspaces button {
     padding: 0 5px;
     background-color: transparent;
-    color: #000000;
+    color: #1e2127;
 }
 /*
 
@@ -70,7 +72,7 @@ button:hover {
 
  */
 #workspaces button.active {
-    background-color: rgba(14, 14, 17, 0.7);
+    background-color: #1e2127;
 }
 
 #workspaces button.urgent {
@@ -134,15 +136,15 @@ button:hover {
 }
 
 #battery.charging, #battery.plugged {
-    background-color: #26A65B;
+    background-color: #98c379;
 }
 
 #battery.warning:not(.charging) {
-    background-color: #d27d2c;
+    background-color: #d19a66;
 }
 
 #battery.critical:not(.charging) {
-    background-color: #d04648;
+    background-color: #e06c75;
 }
 
 #power-profiles-daemon {
@@ -165,7 +167,7 @@ button:hover {
 }
 
 label:focus {
-    background-color: #000000;
+    background-color: #abb2bf;
 }
 
 #cpu {
