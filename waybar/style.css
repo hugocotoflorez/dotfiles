@@ -136,15 +136,15 @@ button:hover {
 }
 
 #battery.charging, #battery.plugged {
-    background-color: #98c379;
+    color: #98c379;
 }
 
 #battery.warning:not(.charging) {
-    background-color: #d19a66;
+    color: #d19a66;
 }
 
 #battery.critical:not(.charging) {
-    background-color: #e06c75;
+    color: #e06c75;
 }
 
 #power-profiles-daemon {

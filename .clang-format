@@ -86,6 +86,10 @@ AlignConsecutiveAssignments: true
 # if true, align variable names in multiple declarations.
 AlignConsecutiveDeclarations: true
 
+# AlignConsecutiveMacros (bool)
+# if true, align variable names in multiple defines.
+AlignConsecutiveMacros: true
+
 # AlignEscapedNewlinesLeft (bool)
 # If true, aligns escaped newlines as far left as possible. Otherwise puts them into the right-most column.
 AlignEscapedNewlinesLeft: true

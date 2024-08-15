@@ -139,11 +139,6 @@ _G.packer_plugins = {
     path = "/home/hugo/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
     url = "https://github.com/VonHeikemen/lsp-zero.nvim"
   },
-  ["markview.nvim"] = {
-    loaded = true,
-    path = "/home/hugo/.local/share/nvim/site/pack/packer/start/markview.nvim",
-    url = "https://github.com/OXY2DEV/markview.nvim"
-  },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
     path = "/home/hugo/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
@@ -229,6 +224,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/hugo/.local/share/nvim/site/pack/packer/start/vim-hardtime",
     url = "https://github.com/takac/vim-hardtime"
+  },
+  ["vim-wakatime"] = {
+    loaded = true,
+    path = "/home/hugo/.local/share/nvim/site/pack/packer/start/vim-wakatime",
+    url = "https://github.com/wakatime/vim-wakatime"
   },
   ["zen-mode.nvim"] = {
     loaded = true,

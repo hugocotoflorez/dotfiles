@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # apply color schemes
 alias grep='grep --color=auto'
 alias bat="bat --theme=1337"
