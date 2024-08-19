@@ -17,6 +17,7 @@
         "battery",
         "network",
         "pulseaudio",
+        "hyprland/language",
         //"cpu",
         "custom/clock",
     ],
@@ -32,6 +33,11 @@
             "*":[1,2,3,4,5],
             "HDMI-A-1":[6,7,8,9,10]
         },
+
+    },
+    "hyprland/language": {
+        "format": "{}",
+        "format-es": "Español",
     },
     "keyboard-state": {
         "numlock": true,
@@ -92,7 +98,7 @@
     "custom/clock": {
         // "timezone": "America/New_York",
         //"format": "{:%a %b %e  %I:%M%p}",
-        "exec": "date +\"%a %b %e  %_I:%M %p\"",
+        "exec": "date +\"%a %b %e  %_H:%M %p\"",
         "interval": 15
     },
     "cpu": {

@@ -7,9 +7,9 @@
 
 window#waybar {
     background-color: #282c34;
+    opacity: 0.9;
     /*
-    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
-    color: #000000;
+    border-bottom: 2px solid #abb2bf;
      */
     transition-property: background-color;
     transition-duration: .5s;
@@ -104,6 +104,7 @@ button:hover {
 #idle_inhibitor,
 #scratchpad,
 #power-profiles-daemon,
+#language,
 #mpd {
     padding: 0 10px;
     /* color: #ffffff; */
@@ -123,6 +124,11 @@ button:hover {
 /* If workspaces is the rightmost module, omit right margin */
 .modules-right > widget:last-child > #workspaces {
     margin-right: 0;
+}
+
+#hyprland-language {
+    /* background-color: #64727D; */
+    background-color: transparent;
 }
 
 #clock {
@@ -292,14 +298,6 @@ label:focus {
 #mpd.paused {
     /* background-color: #51a37a; */
     background-color: transparent;
-}
-
-#language {
-    background: #00b093;
-    color: #740864;
-    padding: 0 5px;
-    margin: 0 5px;
-    min-width: 16px;
 }
 
 #keyboard-state {
