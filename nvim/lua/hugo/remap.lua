@@ -9,6 +9,9 @@ vim.keymap.set("v", "<leader>c", "c/*\n/<Esc>kp")
 
 vim.keymap.set("n", "<leader>tt", ":lua toggle_transparency()<CR>")
 
+vim.keymap.set("n", "<leader>kw", ":lua vim.cmd.colorscheme('kanagawa-wave')<cr>")
+vim.keymap.set("n", "<leader>od", ":lua vim.cmd.colorscheme('onedark')<cr>")
+
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
@@ -47,7 +50,7 @@ vim.keymap.set('x', '<leader>r', ':<C-u>lua InputReplace()<CR>', { noremap = tru
 
 function InputReplace()
   local old_word = vim.fn.input('Replace: ')
-  local new_word = vim.fn.input('With: ', old_word)
+  local new_word = vim.fn.input('With: ')
   vim.cmd('\'<,\'>s/' .. old_word .. '/' .. new_word .. '/gI')
 end
 
