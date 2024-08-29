@@ -10,7 +10,7 @@ vim.keymap.set("v", "<leader>c", "c/*\n/<Esc>kp")
 vim.keymap.set("n", "<leader>tt", ":lua toggle_transparency()<CR>")
 
 vim.keymap.set("n", "<leader>kw", ":lua vim.cmd.colorscheme('kanagawa-wave')<cr>")
-vim.keymap.set("n", "<leader>od", ":lua vim.cmd.colorscheme('onedark')<cr>")
+vim.keymap.set("n", "<leader>od", ":lua vim.cmd.colorscheme('odhugo')<cr>")
 
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")

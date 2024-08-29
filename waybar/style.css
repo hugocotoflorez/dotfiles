@@ -7,7 +7,7 @@
 
 window#waybar {
     background-color: #282c34;
-    opacity: 1.0;
+    opacity: 0.9;
     /*
     border-bottom: 2px solid #abb2bf;
      */
@@ -114,6 +114,10 @@ button:hover {
 #window,
 #workspaces {
     margin: 0 4px;
+}
+
+.modules-left > widget:first-child > #custom-logo {
+    margin-left: 0px;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
