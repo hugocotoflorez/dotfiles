@@ -128,7 +128,7 @@ AllowShortCaseLabelsOnASingleLine: false
 #   SFS_Empty (in configuration: Empty) Only merge empty functions.
 #   SFS_Inline (in configuration: Inline) Only merge functions defined inside a class. Implies “empty”.
 #   SFS_All (in configuration: All) Merge all functions fitting on a single line.
-AllowShortFunctionsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: true
 
 # AllowShortIfStatementsOnASingleLine (bool)
 # If true, if (a) return; can be put on a single line.

@@ -21,6 +21,7 @@ local defaults = {
     functions = { fg = c.blue },
     operators = { fg = c.white, bold = true },
     keywords = { fg = c.magenta, italic = true },
+    strings = { fg = c.green },
     bg = c.bg -- o "NONE" para transparencia
 }
 
@@ -33,10 +34,10 @@ vim.api.nvim_set_hl(0, "Error", { fg = c.red })                    -- Mensajes d
 vim.api.nvim_set_hl(0, "WarningMsg", { fg = c.yellow })            -- Mensajes de advertencia.
 
 -- Pmenu para ventanas flotantes
-vim.api.nvim_set_hl(0, "Pmenu", { fg = c.fg, bg = c.bg })       -- Menú flotante de autocompletado.
-vim.api.nvim_set_hl(0, "PmenuSel", { fg = c.fg, bg = c.black }) -- Selección en el menú flotante.
-vim.api.nvim_set_hl(0, "PmenuSbar", { bg = defaults.bg })       -- Barra de desplazamiento en el menú flotante.
-vim.api.nvim_set_hl(0, "PmenuThumb", { bg = defaults.bg })      -- "Thumb" de la barra de desplazamiento.
+vim.api.nvim_set_hl(0, "Pmenu", { fg = c.fg, bg = c.bg })                   -- Menú flotante de autocompletado.
+vim.api.nvim_set_hl(0, "PmenuSel", { fg = c.fg, bg = c.black })             -- Selección en el menú flotante.
+vim.api.nvim_set_hl(0, "PmenuSbar", { bg = defaults.bg })                   -- Barra de desplazamiento en el menú flotante.
+vim.api.nvim_set_hl(0, "PmenuThumb", { bg = defaults.bg })                  -- "Thumb" de la barra de desplazamiento.
 -- Fondo transparente para componentes adicion
 vim.api.nvim_set_hl(0, "Whitespace", { fg = c.br_black, bg = defaults.bg }) -- Espacios en blanco visibles.
 vim.api.nvim_set_hl(0, "NonText", { fg = c.br_black, bg = defaults.bg })    -- Caracteres no textuales como el `~` al final de las líneas vacías.
@@ -56,10 +57,10 @@ vim.api.nvim_set_hl(0, "DiagnosticSignWarn", { fg = c.yellow })            -- Si
 vim.api.nvim_set_hl(0, "DiagnosticSignInfo", { fg = c.blue })              -- Signo de información de diagnóstico
 vim.api.nvim_set_hl(0, "DiagnosticSignHint", { fg = c.cyan })              -- Signo de sugerencia de diagnóstico
 vim.api.nvim_set_hl(0, "ErrorMsg", { fg = c.red, bg = c.bg, bold = true }) -- Mensajes de error en comandos
-vim.api.nvim_set_hl(0, "DiagnosticError", { fg = c.red })              -- Signo de error de diagnóstico
-vim.api.nvim_set_hl(0, "DiagnosticWarn", { fg = c.yellow })            -- Signo de advertencia de diagnóstico
-vim.api.nvim_set_hl(0, "DiagnosticInfo", { fg = c.blue })              -- Signo de información de diagnóstico
-vim.api.nvim_set_hl(0, "DiagnosticHint", { fg = c.cyan })              -- Signo de sugerencia de diagnóstico
+vim.api.nvim_set_hl(0, "DiagnosticError", { fg = c.red })                  -- Signo de error de diagnóstico
+vim.api.nvim_set_hl(0, "DiagnosticWarn", { fg = c.yellow })                -- Signo de advertencia de diagnóstico
+vim.api.nvim_set_hl(0, "DiagnosticInfo", { fg = c.blue })                  -- Signo de información de diagnóstico
+vim.api.nvim_set_hl(0, "DiagnosticHint", { fg = c.cyan })                  -- Signo de sugerencia de diagnóstico
 
 -- Pestañas
 vim.api.nvim_set_hl(0, "TabLine", { fg = c.fg, bg = defaults.bg }) -- Línea de pestañas.
@@ -79,21 +80,19 @@ vim.api.nvim_set_hl(0, "Operator", defaults.operators) -- Operadores como `+`, `
 -- Tipos de datos y valores
 vim.api.nvim_set_hl(0, "Type", defaults.types)                  -- Tipos de datos como `int`, `char`, y tipos antes de una función.
 vim.api.nvim_set_hl(0, "Number", defaults.values)               -- Números.
-vim.api.nvim_set_hl(0, "Character", defaults.values)            -- Caracteres individuales.
+vim.api.nvim_set_hl(0, "Character", defaults.strings)           -- Caracteres individuales.
 vim.api.nvim_set_hl(0, "Boolean", defaults.values)              -- Literales booleanos.
 vim.api.nvim_set_hl(0, "Constant", { fg = c.red, bold = true }) -- Constantes generales.
+vim.api.nvim_set_hl(0, "String", { fg = c.green })              -- Literales de cadena.
 
 -- Variables, identificadores y delimitadores
 vim.api.nvim_set_hl(0, "Variable", defaults.variables) -- Variables.
 vim.api.nvim_set_hl(0, "Identifier", { fg = c.white }) -- Identificadores como nombres de variables.
 vim.api.nvim_set_hl(0, "Delimiter", { fg = c.white })  -- Delimitadores como `;`, `,`, `.`.
 
--- Cadenas de texto
-vim.api.nvim_set_hl(0, "String", { fg = c.green }) -- Literales de cadena.
-
 -- Comentarios y documentación
-vim.api.nvim_set_hl(0, "Comment", { fg = c.br_black, italic = true })    -- Comentarios en el código.
-vim.api.nvim_set_hl(0, "DocComment", { fg = c.br_black, italic = true }) -- Comentarios de documentación.
+vim.api.nvim_set_hl(0, "Comment", { fg = c.br_black, italic = true }) -- Comentarios en el código.
+vim.api.nvim_set_hl(0, "DocComment", { fg = c.br_black, italic = true})             -- Comentarios de documentación.
 
 -- Números de línea
 vim.api.nvim_set_hl(0, "LineNr", { fg = c.br_black, bg = defaults.bg })                 -- Números de línea.
@@ -188,6 +187,3 @@ vim.api.nvim_set_hl(0, "NvimTreeFolderName", { fg = c.blue })             -- Nom
 vim.api.nvim_set_hl(0, "NvimTreeOpenedFolderName", { fg = c.green })      -- Carpeta abierta en Nvim-tree.
 vim.api.nvim_set_hl(0, "NvimTreeRootFolder", { fg = c.cyan })             -- Carpeta raíz en Nvim-tree.
 vim.api.nvim_set_hl(0, "NvimTreeEmptyFolderName", { fg = c.fg })          -- Carpeta vacía en Nvim-tree.
-
-
-

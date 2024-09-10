@@ -39,6 +39,28 @@ return require('packer').startup(function(use)
     use("nvim-treesitter/nvim-treesitter-context");
     use("wakatime/vim-wakatime");
 
+    use("mfussenegger/nvim-jdtls");
+
+    use({
+        "epwalsh/obsidian.nvim",
+        tag = "*",
+        requires = { "nvim-lua/plenary.nvim" },
+        config = function()
+            require("obsidian").setup({
+                workspaces = {
+                    {
+                        name = "personal",
+                        path = "~/vaults/personal",
+                    },
+                    {
+                        name = "uni",
+                        path = "~/vaults/uni",
+                    },
+                },
+            })
+        end,
+    });
+
     use {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v1.x',

@@ -1,6 +1,6 @@
 # apply color schemes
 alias grep='grep --color=auto'
-alias bat="bat --theme=1337"
+alias bat="bat --theme=OneHalfDark"
 alias printc='for C in {30..37}; do echo -en "\e[${C}m${C} "; done; echo;'
 
 # eza (ls with colors), ls and ranger (cli file explorer)
@@ -24,18 +24,13 @@ alias ......='cd ../../..'
 # cope (colorized tools)
 alias make='${COPE}/make'
 alias gcc='${COPE}/gcc'
-alias xrandr='${COPE}/xrandr'
-
-# keyboard layouts (x11, bspwm)
-alias es='setxkbmap es'
-alias en='~/.config/bspwm/keymaps.sh'
 
 # app launchers
 alias open='firefox $(fzf) && exit'
-alias logisim="wmname compiz && logisim-evolution &! exit" # bspwm error solved
-alias snvim='sudo -E -s nvim' # perserve env
+# alias logisim="wmname compiz && logisim-evolution &! exit" # bspwm error solved
+alias logisim="logisim-evolution &! exit"
+alias snvim='sudo -E -s nvim' # perserve env (colors and this stuff)
 alias clock="alacritty -e tty-clock -SDcn &!"
-alias macc="alacritty --hold --command=\"macchina\" &!"
 alias mips='java -Dswing.plaf.metal.controlFont=Consolas-15 -Dswing.plaf.metal.userFont=Consolas-30 -jar ~/Documents/fundcomp/Simula3MSv4_12.jar'
 alias ss='sudo pacman -S'
 alias zzz="systemctl suspend"
@@ -43,13 +38,14 @@ alias zzz="systemctl suspend"
 # tools launchers
 alias bluetooth="~/.config/wofi/bluetooth.sh"
 alias batt="~/.scripts/battery.sh"
-alias fetch="alacritty --hold -e ~/code/hfetch/hfetch &!"
+alias fetch="~/code/hfetch/hfetch &!"
 alias odf="~/onedark-factory/bin/python ~/onedark-factory/conv.py"
+alias bar="~/code/bar/hbar"
 
 # shorteners
 alias n=nvim
+alias sn='sudo -E -s nvim' # perserve env (colors and this stuff)
 alias c="clear"
-alias gc="git commit -m"
 alias gp="git push"
 alias wifi="nmcli device wifi connect" # wifi <tab>
 alias icat="kitten icat"
