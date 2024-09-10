@@ -1,5 +1,6 @@
 alacritty
 alsa-utils
+asciiquarium
 autoconf-archive
 base
 base-devel
@@ -9,6 +10,7 @@ bluez
 bluez-utils
 breeze-gtk
 brightnessctl
+browsh-bin
 btop
 cmake
 cope-git
@@ -26,6 +28,7 @@ gimp
 git
 glfw
 glm
+go
 grim
 grub
 guvcview
@@ -37,7 +40,8 @@ hyprpaper
 hyprwayland-scanner
 inetutils
 intel-ucode
-interception-caps2esc
+jdk21-openjdk
+keyd
 kitty
 laptop-mode-tools
 lib32-gcc-libs
@@ -49,6 +53,7 @@ linux-firmware
 linux-headers
 linux-lts
 linux-zen
+lldb
 logisim-evolution
 lorien-bin
 lsd
@@ -85,6 +90,7 @@ reflector
 ripgrep
 rmlint
 rtorrent
+ruby
 rust
 slurp
 sof-firmware
@@ -125,6 +131,7 @@ xf86-video-nouveau
 xorg-xinput
 xorg-xrandr
 yay-bin
+zen-browser-bin
 zip
 zram-generator
 zsh
