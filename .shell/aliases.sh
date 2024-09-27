@@ -1,3 +1,4 @@
+#!/bin/zsh
 # apply color schemes
 alias grep='grep --color=auto'
 alias bat="bat --theme=OneHalfDark"
@@ -21,10 +22,6 @@ alias ..='cd ..'
 alias ....='cd ../..'
 alias ......='cd ../../..'
 
-# cope (colorized tools)
-alias make='${COPE}/make'
-alias gcc='${COPE}/gcc'
-
 # app launchers
 alias open='firefox $(fzf) && exit'
 # alias logisim="wmname compiz && logisim-evolution &! exit" # bspwm error solved
@@ -39,7 +36,6 @@ alias zzz="systemctl suspend"
 alias bluetooth="~/.config/wofi/bluetooth.sh"
 alias batt="~/.scripts/battery.sh"
 alias fetch="~/code/hfetch/hfetch &!"
-alias odf="~/onedark-factory/bin/python ~/onedark-factory/conv.py"
 alias bar="~/code/bar/hbar"
 
 # shorteners
@@ -49,6 +45,7 @@ alias c="clear"
 alias gp="git push"
 alias wifi="nmcli device wifi connect" # wifi <tab>
 alias icat="kitten icat"
+alias note='nvim -c "ObsidianSearch"'
 
 # others
 alias aliases='$EDITOR ~/.shell/aliases.sh'
