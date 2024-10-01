@@ -23,7 +23,7 @@ alias ....='cd ../..'
 alias ......='cd ../../..'
 
 # app launchers
-alias open='firefox $(fzf) && exit'
+alias open='firefox $(fzf) &! exit'
 # alias logisim="wmname compiz && logisim-evolution &! exit" # bspwm error solved
 alias logisim="logisim-evolution &! exit"
 alias snvim='sudo -E -s nvim' # perserve env (colors and this stuff)
@@ -41,7 +41,6 @@ alias bar="~/code/bar/hbar"
 # shorteners
 alias n=nvim
 alias sn='sudo -E -s nvim' # perserve env (colors and this stuff)
-alias c="clear"
 alias gp="git push"
 alias wifi="nmcli device wifi connect" # wifi <tab>
 alias icat="kitten icat"
