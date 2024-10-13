@@ -12,6 +12,7 @@ bluez-utils
 breeze-gtk
 brightnessctl
 btop
+chromium
 cmake
 cope-git
 cpio
@@ -42,6 +43,7 @@ hyprwayland-scanner
 inetutils
 intel-ucode
 jdk21-openjdk
+kdenlive
 keyd
 kitty
 laptop-mode-tools
@@ -64,6 +66,7 @@ lsscsi
 luarocks
 lxappearance
 ly
+macchina
 man-db
 man-pages
 maven
@@ -109,6 +112,7 @@ rmlint
 rtorrent
 ruby
 rust
+screenkey
 slurp
 sof-firmware
 spicetify-cli
@@ -139,6 +143,7 @@ vlc
 vulkan-nouveau
 vulkan-validation-layers
 waybar
+wev
 wget
 wireplumber
 wl-clipboard
@@ -149,7 +154,8 @@ xdg-desktop-portal-wlr
 xf86-video-nouveau
 xorg-xinput
 xorg-xrandr
-yay-bin
+yay
+yay-debug
 zen-browser-bin
 zip
 zram-generator

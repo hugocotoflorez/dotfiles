@@ -16,7 +16,7 @@ alias lr="ranger"
 # cd
 alias cd..='cd ..' # best remap ever created
 alias dw='cd ~/Downloads/'
-alias :w='source ~/.zshrc'
+alias :so='source ~/.zshrc'
 alias :q='exit' # i use vim btw
 alias ..='cd ..'
 alias ....='cd ../..'
@@ -40,8 +40,10 @@ alias bar="~/code/bar/hbar"
 
 # shorteners
 alias n=nvim
+alias nn='nvim $(fzf)'
 alias sn='sudo -E -s nvim' # perserve env (colors and this stuff)
 alias gp="git push"
+alias ga="git add ."
 alias wifi="nmcli device wifi connect" # wifi <tab>
 alias icat="kitten icat"
 alias note='nvim -c "ObsidianSearch"'
