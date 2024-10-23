@@ -24,6 +24,7 @@ alias ......='cd ../../..'
 
 # app launchers
 alias open='firefox $(fzf) &! exit'
+alias opene='evince $(fzf) &! exit'
 # alias logisim="wmname compiz && logisim-evolution &! exit" # bspwm error solved
 alias logisim="logisim-evolution &! exit"
 alias snvim='sudo -E -s nvim' # perserve env (colors and this stuff)

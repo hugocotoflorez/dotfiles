@@ -11,4 +11,6 @@ export LESS='-R --use-color -Dd+r$Du+b$'
 #export VK_ICD_FILENAMES="/usr/share/vulkan/icd.d/nouveau_icd.x86_64.json"
 export GRIM_DEFAULT_DIR="~/Downloads/"
 export XDG_PICTURES_DIR="~/Downloads/"
-export XDG_CURRENT_DESKTOP="hyprland"
+export XDG_CURRENT_DESKTOP="Hyprland"
+
+export PATH="$PATH:$HOME/.local/bin"
