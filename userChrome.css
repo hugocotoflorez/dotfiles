@@ -1,5 +1,19 @@
-
 /* Placed in ~/.mozilla/firefox/s840270r.default-release/chrome/ */
+
+@-moz-document domain(github.com) {
+    * {
+        font-family: "sf pro display" !important;
+        font-size: 16px !important;
+        color: #abb2bf !important;
+        border: none !important;
+        outline: none !important;
+        box-shadow: none !important;
+    }
+
+    body {
+        background: #1e2127 !important;
+    }
+}
 
 * {
     font-family: "sf pro display" !important;
@@ -157,17 +171,16 @@
     min-height: calc(var(--TabsHeight) * 1px) !important
 }
 
-
 /*  Removes urlbar border/background  */
 #urlbar-background {
+    background: #1e2127 !important;
     border: none !important;
     outline: none !important;
-    background: #1e2127 !important;
+    opacity: 0.8;
 }
 
 #TabsToolbar {
     outline: none !important;
-    background: transparent !important;
 }
 
 /*  Removes the background from the urlbar while not in use  */
@@ -231,6 +244,6 @@
 
 .tab-background:is([selected], [multiselected]) {
     background-image: none !important;
-    background: #2f3238 !important;
+    background: #282c34 !important;
     box-shadow: none !important;
 }

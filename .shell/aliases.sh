@@ -28,7 +28,7 @@ alias opene='evince $(fzf) &! exit'
 # alias logisim="wmname compiz && logisim-evolution &! exit" # bspwm error solved
 alias logisim="logisim-evolution &! exit"
 alias snvim='sudo -E -s nvim' # perserve env (colors and this stuff)
-alias clock="alacritty -e tty-clock -SDcn &!"
+alias clock="kitty -e tty-clock -SDcn &!"
 alias mips='java -Dswing.plaf.metal.controlFont=Consolas-15 -Dswing.plaf.metal.userFont=Consolas-30 -jar ~/Documents/fundcomp/Simula3MSv4_12.jar'
 alias ss='sudo pacman -S'
 alias zzz="systemctl suspend"
@@ -36,7 +36,7 @@ alias zzz="systemctl suspend"
 # tools launchers
 alias bluetooth="~/.config/wofi/bluetooth.sh"
 alias batt="~/.scripts/battery.sh"
-alias fetch="~/code/hfetch/hfetch &!"
+alias fetch="~/code/hfetch/hfetch"
 alias bar="~/code/bar/hbar"
 
 # shorteners

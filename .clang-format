@@ -105,6 +105,11 @@ AlignOperands: true
 # If true, aligns trailing comments.
 AlignTrailingComments: true
 
+AlignConsecutiveBitFields: true
+
+# one of Before, After, None, Both
+BitFieldColonSpacing: Both
+
 # AllowAllConstructorInitializersOnNextLine (bool)
 # if true, break before constructor initializer
 AllowAllConstructorInitializersOnNextLine: true

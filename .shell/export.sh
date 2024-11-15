@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 
 export ZSH_AUTOSUGGEST_STRATEGY=(completion history)
 export LANG=en_US.UTF-8
@@ -11,6 +11,6 @@ export LESS='-R --use-color -Dd+r$Du+b$'
 #export VK_ICD_FILENAMES="/usr/share/vulkan/icd.d/nouveau_icd.x86_64.json"
 export GRIM_DEFAULT_DIR="~/Downloads/"
 export XDG_PICTURES_DIR="~/Downloads/"
-export XDG_CURRENT_DESKTOP="Hyprland"
+#export XDG_CURRENT_DESKTOP="Hyprland"
 
 export PATH="$PATH:$HOME/.local/bin"

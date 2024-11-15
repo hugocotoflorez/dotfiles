@@ -9,6 +9,3 @@ source ~/.shell/aliases.sh
 source ~/.shell/functions.sh
 source ~/.shell/export.sh
 source ~/.shell/options.sh
-
-
-. "/home/hugo/.deno/env"

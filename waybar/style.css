@@ -6,7 +6,7 @@
 }
 
 window#waybar {
-    background-color: #282c34;
+    background-color: #1e2127;
     opacity: 0.9;
     /*
     border-bottom: 2px solid #abb2bf;
@@ -62,7 +62,7 @@ button:hover {
 #workspaces button {
     padding: 0 5px;
     background-color: transparent;
-    color: #1e2127;
+    color: #5c6370;
 }
 /*
 
@@ -72,7 +72,7 @@ button:hover {
 
  */
 #workspaces button.active {
-    background-color: #1e2127;
+    background-color: #282c34;
 }
 
 #workspaces button.urgent {
