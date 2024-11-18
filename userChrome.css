@@ -1,21 +1,7 @@
 /* Placed in ~/.mozilla/firefox/s840270r.default-release/chrome/ */
 
-@-moz-document domain(github.com) {
-    * {
-        font-family: "sf pro display" !important;
-        font-size: 16px !important;
-        color: #abb2bf !important;
-        border: none !important;
-        outline: none !important;
-        box-shadow: none !important;
-    }
 
-    body {
-        background: #1e2127 !important;
-    }
-}
-
-* {
+body {
     font-family: "sf pro display" !important;
     font-size: 16px !important;
     color: #abb2bf !important;

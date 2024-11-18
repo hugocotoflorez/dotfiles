@@ -8,9 +8,8 @@ export EZA_COLORS='rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:*.h=0
 export MANPAGER="less -R --use-color -Dd+r -Du+b"
 export MANROFFOPT="-P -c"
 export LESS='-R --use-color -Dd+r$Du+b$'
-#export VK_ICD_FILENAMES="/usr/share/vulkan/icd.d/nouveau_icd.x86_64.json"
-export GRIM_DEFAULT_DIR="~/Downloads/"
-export XDG_PICTURES_DIR="~/Downloads/"
+export GRIM_DEFAULT_DIR="~/ScreenCaptures"
+export XDG_PICTURES_DIR="~/Pictures"
 #export XDG_CURRENT_DESKTOP="Hyprland"
 
 export PATH="$PATH:$HOME/.local/bin"

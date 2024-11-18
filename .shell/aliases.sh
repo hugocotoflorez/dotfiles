@@ -24,7 +24,7 @@ alias ......='cd ../../..'
 
 # app launchers
 alias open='firefox $(fzf) &! exit'
-alias opene='evince $(fzf) &! exit'
+alias zopen='zathura $(fzf) &! exit'
 # alias logisim="wmname compiz && logisim-evolution &! exit" # bspwm error solved
 alias logisim="logisim-evolution &! exit"
 alias snvim='sudo -E -s nvim' # perserve env (colors and this stuff)
@@ -53,4 +53,7 @@ alias note='nvim -c "ObsidianSearch"'
 alias aliases='$EDITOR ~/.shell/aliases.sh'
 alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias usc="firefox cv.usc.es/my/courses.php &! exit"
+
+# Just to have dotfiles up to date
+alias poweroff="~/dotfiles/update_dotfiles.sh && poweroff"
 

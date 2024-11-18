@@ -1,0 +1,74 @@
+@-moz-document domain(cvusces) {
+    * {
+        font-family: "sf pro display" !important;
+        color: #abb2bf !important;
+        border: none;
+        outline: none !important;
+        box-shadow: none !important;
+    }
+
+    div:not(.card-img-top) {
+        font-size: 24px !important;
+        background: #1e2127 ;
+        border: none !important;
+        outline: none !important;
+        box-shadow: none !important;
+    }
+
+    input {
+        background: #1e2127 !important;
+        border: 1px solid #abb2bf !important;
+        outline: none !important;
+        box-shadow: none !important;
+    }
+
+    selection,
+    button,
+    nav {
+        background: #1e2127 !important;
+        border: none !important;
+        outline: none !important;
+        box-shadow: none !important;
+    }
+
+    button.btn-clear {
+        background: transparent !important;
+    }
+
+    nav a.nav-link:hover {
+        background: transparent !important;
+        border: none !important;
+        outline: none !important;
+        box-shadow: none !important;
+    }
+
+    li {
+        margin: 0 !important;
+        border: none !important;
+        outline: none !important;
+        box-shadow: none !important;
+    }
+
+    ul {
+        list-style: none !important;
+        background: #1e2127 !important;
+        border: none !important;
+        outline: none !important;
+        box-shadow: none !important;
+    }
+
+    ul[role="menubar"],
+    ul[role="menu"] {
+        background: #1e2127 !important;
+        border: none !important;
+        outline: none !important;
+        box-shadow: none !important;
+    }
+
+    img {
+        background: inherit !important;
+        border: inherit !important;
+        outline: inherit !important;
+        box-shadow: inherit !important;
+    }
+}

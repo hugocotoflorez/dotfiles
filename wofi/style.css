@@ -9,7 +9,7 @@ border-width:2px;
 #input {
 margin: 5px;
 color: #abb2bf;
-border: 2px solid #abb2bf;
+border: none;
 background-color: #1e2127;
 }
 
@@ -37,5 +37,6 @@ color: #abb2bf;
 }
 
 #entry:selected {
-background-color: #5c6370;
+    background-color: #1e2127;;
+    border:  1px solid #abb2bf;
 }
