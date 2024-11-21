@@ -163,7 +163,7 @@ AlwaysBreakTemplateDeclarations: false
 
 # BinPackParameters (bool)
 # If false, a function declaration’s or function definition’s parameters will either all be on the same line or will have one line each.
-BinPackParameters: false
+BinPackParameters: true
 
 # BraceWrapping (BraceWrappingFlags)
 # Control of individual brace wrapping cases.
@@ -336,11 +336,11 @@ ObjCSpaceBeforeProtocolList: true
 
 # PenaltyBreakBeforeFirstCallParameter (unsigned)
 # The penalty for breaking a function call after call(.
-PenaltyBreakBeforeFirstCallParameter: 100
+PenaltyBreakBeforeFirstCallParameter: 120
 
 # PenaltyBreakComment (unsigned)
 # The penalty for each line break introduced inside a comment.
-PenaltyBreakComment: 100
+PenaltyBreakComment: 80
 
 # PenaltyBreakFirstLessLess (unsigned)
 # The penalty for breaking before the first <<.
@@ -348,7 +348,7 @@ PenaltyBreakFirstLessLess: 0
 
 # PenaltyBreakString (unsigned)
 # The penalty for each line break introduced inside a string literal.
-PenaltyBreakString: 100
+PenaltyBreakString: 80
 
 # PenaltyExcessCharacter (unsigned)
 # The penalty for each character outside of the column limit.
