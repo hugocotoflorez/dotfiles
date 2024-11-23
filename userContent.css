@@ -1,12 +1,148 @@
-@-moz-document domain(cvusces) {
+@-moz-document domain(github.com) {
     * {
         font-family: "sf pro display" !important;
+        border-top: none !important;
+        border-bottom: none !important;
+        border-left: none !important;
+        border-right: none !important;
+    }
+
+    body {
         color: #abb2bf !important;
-        border: none;
+        background: #282c34 !important;
+    }
+
+    .Label,
+    svg {
+        color: #abb2bf !important;
+        background: transparent !important;
+    }
+
+    relative-time,
+    div.text-small {
+        color: #abb2bf !important;
+    }
+
+    .bgColor-muted,
+    .dJnomT,
+    header {
+        color: #abb2bf !important;
+        background: #1e2127 !important;
         outline: none !important;
+        border: none !important;
         box-shadow: none !important;
     }
 
+    .csrIcr {
+        color: #abb2bf !important;
+        background: #1e2127 !important;
+        outline: none !important;
+        border: 2px solid #abb2bf !important;
+        box-shadow: none !important;
+        border-radius: 10px !important;
+    }
+
+    table:not(.Box-sc-g0xbh4-0) {
+        color: #abb2bf !important;
+        background: #1e2127 !important;
+        outline: none !important;
+        border: 1px solid #abb2bf !important;
+        box-shadow: none !important;
+        border-radius: 10px !important;
+
+        tr {
+            border-top: 1px solid #abb2bf !important;
+            background: #1e2127 !important;
+        }
+
+        td:not(:last-child) {
+            border-right: 1px solid #abb2bf !important;
+        }
+
+    }
+
+    table.Box-sc-g0xbh4-0 {
+        color: #abb2bf !important;
+        background: #1e2127 !important;
+        outline: none !important;
+        border: 2px solid #abb2bf !important;
+        box-shadow: none !important;
+        border-radius: 10px !important;
+    }
+
+
+    span.pl-s {
+        color: #98c379 !important;
+    }
+
+    /* string */
+    span.pl-en {
+        color: #61afef !important;
+    }
+
+    /* func */
+    span.pl-s1 {
+        color: #61afef !important;
+    }
+
+    /* variable */
+    span.pl-smi {
+        color: #56b6c2 !important;
+    }
+
+    /* type */
+    span.pl-c1 {
+        color: #abb2bf !important;
+    }
+
+    /* symbol */
+
+    span,
+    span.color-fg-muted,
+    a,
+    form,
+    button {
+        color: #abb2bf !important;
+        background: transparent !important;
+        outline: none !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    .AppHeader-context-full>nav:nth-child(1)>ul:nth-child(1)>li:nth-child(2)>a:nth-child(1)>span:nth-child(1) {
+        color: #61afef !important;
+        background: transparent !important;
+        outline: none !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+
+    /* Code snippet into box */
+    pre {
+        background: transparent !important;
+    }
+
+    /* Code box */
+    div.snippet-clipboard-content,
+    div.highlight {
+        font: monospace !important;
+        background: transparent !important;
+        border: 1px solid #abb2bf !important;
+        border-radius: 10px !important;
+    }
+
+    .dItACB,
+    hr,
+    details,
+    div.BorderGrid-row:nth-child(5),
+    div.BorderGrid-row:nth-child(6) {
+        display: none !important;
+    }
+
+}
+
+/*
     div:not(.card-img-top) {
         font-size: 24px !important;
         background: #1e2127 ;
@@ -71,4 +207,5 @@
         outline: inherit !important;
         box-shadow: inherit !important;
     }
+    */
 }
