@@ -13,3 +13,5 @@ export XDG_PICTURES_DIR="~/Pictures"
 #export XDG_CURRENT_DESKTOP="Hyprland"
 
 export PATH="$PATH:$HOME/.local/bin"
+
+export HOST # for hsll
