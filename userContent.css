@@ -1,16 +1,21 @@
 @-moz-document domain(github.com) {
+    /*
     * {
-        font-family: "sf pro display" !important;
         border-top: none !important;
         border-bottom: none !important;
         border-left: none !important;
         border-right: none !important;
     }
+     */
 
     body {
+        font-family: "sf pro display" !important;
+        /*
         background: #282c34 !important;
-
+         */
     }
+
+    /*
 
     .Label,
     svg:not(.octicon-star-fill) {
@@ -157,6 +162,7 @@
         }
     }
 
+     */
 
     /* string */
     span.pl-s {
@@ -192,6 +198,8 @@
         color: #5c6370 !important;
     }
 
+    /*
+
     span,
     span.color-fg-muted,
     a,
@@ -212,20 +220,28 @@
         box-shadow: none !important;
     }
 
+     */
 
     /* Code snippet into box */
     pre {
+        font-family: "source code pro" !important;
+        /*
         background: transparent !important;
+         */
     }
 
     /* Code box */
     div.snippet-clipboard-content,
     div.highlight {
-        font: monospace !important;
+        font-family: "source code pro" !important;
+        /*
         background: transparent !important;
         border: 1px solid #abb2bf !important;
         border-radius: 10px !important;
+         */
     }
+
+    /*
 
     div.contribution-activity,
     .dItACB,
@@ -238,7 +254,8 @@
 
 }
 
-/*
+     */
+    /*
     div:not(.card-img-top) {
         font-size: 24px !important;
         background: #1e2127 ;
@@ -304,7 +321,8 @@
         box-shadow: inherit !important;
     }
     */
-/* Catppuccin Macchiato Palette */
+    /* Catppuccin Macchiato Palette */
+    /*
 
 :root {
     --vimium-rosewater: #f4dbd6;
@@ -487,3 +505,4 @@ body.vimiumBody input,
 body.vimiumBody label {
     color: var(--vimium-text) !important;
 }
+     */
