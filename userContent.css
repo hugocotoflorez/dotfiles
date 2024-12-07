@@ -1,12 +1,13 @@
 @-moz-document domain(github.com) {
-    /*
     * {
+        font-family: "sf pro display";
+        /*
         border-top: none !important;
         border-bottom: none !important;
         border-left: none !important;
         border-right: none !important;
+         */
     }
-     */
 
     body {
         font-family: "sf pro display" !important;
