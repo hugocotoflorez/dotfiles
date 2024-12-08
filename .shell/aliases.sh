@@ -55,7 +55,7 @@ alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias usc="firefox cv.usc.es/my/courses.php &! exit"
 
 # Just to have dotfiles up to date
-alias poweroff="~/dotfiles/update_dotfiles.sh && poweroff"
+alias poweroff="~/dotfiles/update_dotfiles.sh ; poweroff"
 
 
 alias dveaber="GDK_BACKEND=x11 dbeaver"
