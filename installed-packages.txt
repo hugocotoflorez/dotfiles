@@ -1,3 +1,4 @@
+activate-linux
 alacritty
 alsa-utils
 arp-scan
@@ -10,8 +11,10 @@ bind
 blueman
 bluez
 bluez-utils
+brave-bin
 breeze-gtk
 brightnessctl
+browsh-bin
 bsdmainutils
 bspwm
 btop
@@ -19,10 +22,11 @@ chromium
 cmake
 cope-git
 cpio
+dbeaver
 discord
 dosfstools
 efibootmgr
-evince
+equilux-theme
 eza
 fastfetch
 feh
@@ -38,7 +42,9 @@ gotop
 gradle
 grim
 grub
+gtk-theme-iris-dark-git
 guvcview
+hope-gtk3-theme
 htop
 hypridle
 hyprland
@@ -52,9 +58,9 @@ kdenlive
 keyd
 kitty
 laptop-mode-tools
+lazygit
 lib32-gcc-libs
 libreoffice-fresh
-libva-mesa-driver
 libvirt
 light
 linux
@@ -76,8 +82,10 @@ man-db
 man-pages
 maven
 meson
+midnight-gtk-theme-git
 mpv
 ncdu
+ncspot
 neovim
 net-tools
 networkmanager
@@ -97,6 +105,7 @@ pipewire-pulse
 pipewire-v4l2
 playerctl
 polybar
+postgresql
 power-profiles-daemon
 psf-cozette
 psf-envypn
@@ -124,6 +133,7 @@ rust
 screenkey
 slurp
 sof-firmware
+solarized-dark-themes
 spicetify-cli
 spotify-adblock-git
 spotify-tui
@@ -164,6 +174,7 @@ wofi
 xdg-desktop-portal-hyprland
 xdg-desktop-portal-wlr
 xf86-video-nouveau
+xfce-theme-cobibird
 xorg-bdftopcf
 xorg-iceauth
 xorg-mkfontscale
@@ -200,6 +211,8 @@ xorg-xwininfo
 xorg-xwud
 yay
 yay-debug
+zathura
+zathura-pdf-poppler
 zip
 zram-generator
 zsh
