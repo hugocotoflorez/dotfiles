@@ -19,11 +19,11 @@
 
 # TabWidth (unsigned)
 # The number of columns used for tab stops.
-TabWidth: 4
+TabWidth: 8
 
 # IndentWidth (unsigned)
 # The number of columns to use for indentation.
-IndentWidth: 4
+IndentWidth: 8
 
 # UseTab (UseTabStyle)
 # The way to use tab characters in the resulting file.
@@ -31,7 +31,7 @@ IndentWidth: 4
 #   UT_Never (in configuration: Never) Never use tab.
 #   UT_ForIndentation (in configuration: ForIndentation) Use tabs only for indentation.
 #   UT_Always (in configuration: Always) Use tabs whenever we need to fill whitespace that spans at least from one tab stop to the next one.
-UseTab: Never
+UseTab: Never #Always # linux
 
 # C++
 #####
@@ -57,7 +57,7 @@ Standard: Auto
 
 # AccessModifierOffset (int)
 # The extra indent or outdent of access modifiers, e.g. public:.
-AccessModifierOffset: 0
+AccessModifierOffset: -4
 
 # AlignAfterOpenBracket (BracketAlignmentStyle)
 # If true, horizontally aligns arguments after an open bracket.
@@ -80,15 +80,15 @@ AlignAfterOpenBracket: Align
 # int aaaa = 12;
 # int b    = 23;
 # int ccc  = 23;
-AlignConsecutiveAssignments: true
+AlignConsecutiveAssignments: false # true
 
 # AlignConsecutiveDeclarations (bool)
 # if true, align variable names in multiple declarations.
-AlignConsecutiveDeclarations: true
+AlignConsecutiveDeclarations: false # true
 
 # AlignConsecutiveMacros (bool)
 # if true, align variable names in multiple defines.
-AlignConsecutiveMacros: true
+AlignConsecutiveMacros: false # true
 
 # AlignEscapedNewlinesLeft (bool)
 # If true, aligns escaped newlines as far left as possible. Otherwise puts them into the right-most column.
@@ -103,7 +103,7 @@ AlignOperands: true
 
 # AlignTrailingComments (bool)
 # If true, aligns trailing comments.
-AlignTrailingComments: true
+AlignTrailingComments: false #true
 
 AlignConsecutiveBitFields: true
 
@@ -133,7 +133,7 @@ AllowShortCaseLabelsOnASingleLine: false
 #   SFS_Empty (in configuration: Empty) Only merge empty functions.
 #   SFS_Inline (in configuration: Inline) Only merge functions defined inside a class. Implies “empty”.
 #   SFS_All (in configuration: All) Merge all functions fitting on a single line.
-AllowShortFunctionsOnASingleLine: true
+AllowShortFunctionsOnASingleLine: None
 
 # AllowShortIfStatementsOnASingleLine (bool)
 # If true, if (a) return; can be put on a single line.
@@ -159,7 +159,7 @@ AlwaysBreakTemplateDeclarations: false
 
 # BinPackArguments (bool)
 # If false, a function call’s arguments will either be all on the same line or will have one line each.
-#BinPackArguments: false
+BinPackArguments: true
 
 # BinPackParameters (bool)
 # If false, a function declaration’s or function definition’s parameters will either all be on the same line or will have one line each.
@@ -222,10 +222,11 @@ BreakConstructorInitializersBeforeComma: false
 # ColumnLimit (unsigned)
 # The column limit.
 # A column limit of 0 means that there is no column limit. In this case, clang-format will respect the input’s line breaking decisions within statements unless they contradict other rules.
-ColumnLimit: 75
+ColumnLimit: 80
 
 # CommentPragmas (std::string)
 # A regular expression that describes comments with special meaning, which should not be split into lines or otherwise changed.
+#
 CommentPragmas: ''
 
 # ConstructorInitializerAllOnOneLineOrOnePerLine (bool)
