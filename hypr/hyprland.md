@@ -1,0 +1,38 @@
+# Binds
+- **SUPER P**: toggle keybinds
+- **SUPER RETURN**: open terminal
+- **SUPER SPACE**: open wofi
+- **SUPER T**: open todo file
+- **SUPER B**: open bluetooth menu
+- **SUPER W**: kill active window
+- **SUPER SHIFT W**: kill hyprland
+- **SUPER f**: fullscreen
+- **SUPER s**: toggle split
+- **SUPER h**: move focus
+- **SUPER l**: move focus
+- **SUPER k**: move focus
+- **SUPER j**: move focus
+- **SUPER_SHIFT h**: move window
+- **SUPER_SHIFT l**: move window
+- **SUPER_SHIFT k**: move window
+- **SUPER_SHIFT j**: move window
+- **SUPER_ALT h**: resize
+- **SUPER_ALT l**: resize
+- **SUPER_ALT k**: resize
+- **SUPER_ALT j**: resize
+- **SUPER X**: go to workspace X
+- **SUPER SHIFT X**: move to workspace X
+- **SUPER m**: minimize active window
+- **SUPER x**: exec toggle_touchpad.sh
+- **SUPER_SHIFT RETURN**: exec ~/.scripts/otcd.sh
+- **XF86AudioRaiseVolume**: raise volume
+- **XF86AudioLowerVolume**: lower volume
+- **XF86AudioMute**: mute
+- **XF86MonBrightnessUp**: brightness up
+- **XF86MonBrightnessDown**: brightness down
+- **SUPER ALT SPACE**: open spotify floating menu
+- **ALT SPACE**: pause song
+- **ALT n**: next song
+- **ALT p**: previous song
+- **Print**: take screen capture
+- **SHIFT Print**: take a fullscreen capture

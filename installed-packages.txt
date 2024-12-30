@@ -1,6 +1,9 @@
+7zip
 activate-linux
 alacritty
 alsa-utils
+arc-gtk-theme
+arc-solid-gtk-theme
 arp-scan
 asciiquarium
 autoconf-archive
@@ -54,6 +57,7 @@ hyprwayland-scanner
 inetutils
 intel-ucode
 jdk21-openjdk
+jq
 kdenlive
 keyd
 kitty
@@ -95,7 +99,6 @@ npm
 obs-studio
 obsidian
 opencl-nvidia
-p7zip
 pandoc-cli
 pavucontrol
 picom
@@ -107,6 +110,7 @@ playerctl
 polybar
 postgresql
 power-profiles-daemon
+powertop
 psf-cozette
 psf-envypn
 psf-tamzen-font-git
@@ -135,8 +139,7 @@ slurp
 sof-firmware
 solarized-dark-themes
 spicetify-cli
-spotify-adblock-git
-spotify-tui
+spotify-launcher
 sway
 sxhkd
 sysstat
@@ -211,6 +214,7 @@ xorg-xwininfo
 xorg-xwud
 yay
 yay-debug
+yazi
 zathura
 zathura-pdf-poppler
 zip
