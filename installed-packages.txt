@@ -1,5 +1,6 @@
 7zip
 activate-linux
+ags-hyprpanel-git
 alacritty
 alsa-utils
 arc-gtk-theme
@@ -28,8 +29,10 @@ cpio
 dbeaver
 discord
 dosfstools
+ed
 efibootmgr
 equilux-theme
+evince
 eza
 fastfetch
 feh
@@ -40,9 +43,11 @@ gimp
 git
 glfw
 glm
+gnome-power-manager
 gnu-netcat
 gotop
 gradle
+graphviz
 grim
 grub
 gtk-theme-iris-dark-git
@@ -89,7 +94,6 @@ meson
 midnight-gtk-theme-git
 mpv
 ncdu
-ncspot
 neovim
 net-tools
 networkmanager
@@ -140,6 +144,7 @@ sof-firmware
 solarized-dark-themes
 spicetify-cli
 spotify-launcher
+strace
 sway
 sxhkd
 sysstat
@@ -160,6 +165,7 @@ unrar
 unzip
 v4l2loopback-dkms
 valgrind
+vi
 vim
 virtualbox
 virtualbox-host-modules-arch

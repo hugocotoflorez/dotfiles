@@ -48,6 +48,7 @@ alias ga="git add ."
 alias wifi="nmcli device wifi connect" # wifi <tab>
 alias icat="kitten icat"
 alias note='nvim -c "ObsidianSearch"'
+alias ffind='find -type f -name'
 
 # others
 alias aliases='$EDITOR ~/.shell/aliases.sh'

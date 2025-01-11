@@ -7,10 +7,10 @@ function github(){
 }
 
 function gc(){
-    git commit -m "$*"
-}
-
-function gcl(){
-    git clone "https://github.com/$1/$2"
+        if [[ -n "$*" ]]; then
+                git commit -m "$*"
+        else
+                git commit -e
+        fi
 }
 
