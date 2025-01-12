@@ -1,0 +1,9 @@
+[user]
+	email = hugocoto100305@gmail.com
+	name = hugocotoflorez
+[credential]
+	helper = store
+[pull]
+	rebase = true
+[init]
+	defaultBranch = main

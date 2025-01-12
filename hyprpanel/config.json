@@ -1,0 +1,10 @@
+{
+  "bar.customModules.updates.pollingInterval": 1440000,
+  "theme.font.name": "SourceCodeVF",
+  "theme.font.label": "SourceCodeVF Medium",
+  "hyprpanel.restartAgs": false,
+  "theme.bar.menus.monochrome": true,
+  "wallpaper.enable": false,
+  "theme.bar.menus.opacity": 95,
+  "theme.bar.transparent": false
+}
