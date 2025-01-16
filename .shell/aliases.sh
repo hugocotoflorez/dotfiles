@@ -11,7 +11,7 @@ alias la='ls -a'
 alias laa='ls -Alh'
 alias lg='ls -A | grep'
 alias lt="eza --color=auto --sort=newest"
-alias lr="ranger"
+alias lr="yazi"
 
 # cd
 alias cd..='cd ..' # best remap ever created
@@ -37,11 +37,10 @@ alias zzz="systemctl suspend"
 alias bluetooth="~/.config/wofi/bluetooth.sh"
 alias batt="~/.scripts/battery.sh"
 alias fetch="~/code/hfetch/hfetch"
-alias bar="~/code/bar/hbar"
 
 # shorteners
 alias n=nvim
-alias nn='nvim $(fzf)'
+alias v=vim
 alias sn='sudo -E -s nvim' # perserve env (colors and this stuff)
 alias gp="git push"
 alias ga="git add ."
