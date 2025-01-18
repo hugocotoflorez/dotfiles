@@ -84,7 +84,7 @@ execute 'hi EndOfBuffer guifg= ' . s:brblack . ' guibg= ' . s:bg . ' gui= ' . s:
 execute 'hi ErrorMsg guifg= ' . s:white . ' guibg= ' . s:bg . ' gui= ' . s:NONE . ' cterm= ' . s:NONE
 execute 'hi FoldColumn guifg= ' . s:cyan . ' guibg= ' . s:NONE . ' gui= ' . s:NONE . ' cterm= ' . s:NONE
 execute 'hi IncSearch guifg= ' . s:NONE . ' guibg= ' . s:bg . ' gui= ' . s:reverse . ' cterm= ' . s:reverse
-execute 'hi LineNr guifg= ' . s:green . ' guibg= ' . s:NONE . ' gui= ' . s:NONE . ' cterm= ' . s:NONE
+execute 'hi LineNr guifg= ' . s:brblack . ' guibg= ' . s:NONE . ' gui= ' . s:NONE . ' cterm= ' . s:NONE
 execute 'hi MatchParen guifg= ' . s:NONE . ' guibg= ' . s:brblack . ' gui= ' . s:NONE . ' cterm= ' . s:NONE
 execute 'hi ModeMsg guifg= ' . s:NONE . ' guibg= ' . s:NONE . ' gui= ' . s:bold . ' ctermfg= ' . s:NONE . ' ctermbg= ' . s:NONE . ' cterm= ' . s:bold
 execute 'hi MoreMsg guifg= ' . s:white . ' guibg= ' . s:NONE . ' gui= ' . s:bold . ' cterm= ' . s:bold
@@ -103,7 +103,7 @@ execute 'hi SpellBad guifg= ' . s:magenta . ' guibg= ' . s:NONE . ' guisp= ' . s
 execute 'hi SpellCap guifg= ' . s:brblack . ' guibg= ' . s:NONE . ' guisp= ' . s:brblack . ' gui= ' . s:undercurl . ' cterm= ' . s:underline
 execute 'hi SpellLocal guifg= ' . s:green . ' guibg= ' . s:NONE . ' guisp= ' . s:green . ' gui= ' . s:undercurl . ' cterm= ' . s:underline
 execute 'hi SpellRare guifg= ' . s:fg . ' guibg= ' . s:NONE . ' guisp= ' . s:fg . ' gui= ' . s:undercurl . ' cterm= ' . s:underline
-execute 'hi StatusLine guifg= ' . s:bg . ' guibg= ' . s:cyan . ' gui= ' . s:bold . ' cterm= ' . s:bold
+execute 'hi StatusLine guifg= ' . s:fg . ' guibg= ' . s:black . ' gui= ' . s:bold . ' cterm= ' . s:bold
 execute 'hi StatusLineNC guifg= ' . s:bg . ' guibg= ' . s:fg . ' gui= ' . s:NONE . ' cterm= ' . s:NONE
 execute 'hi TabLine guifg= ' . s:bg . ' guibg= ' . s:fg . ' gui= ' . s:NONE . ' cterm= ' . s:NONE
 execute 'hi TabLineFill guifg= ' . s:NONE . ' guibg= ' . s:bg . ' gui= ' . s:reverse . ' cterm= ' . s:reverse
