@@ -1,7 +1,7 @@
 " Name:         od_hugo
-" Author:
-" Maintainer:
-" Website:
+" Author:       Hugo Coto Florez
+" Maintainer:   Hugo Coto Florez
+" Website:      github.com/hugocotoflorez
 " License:      Same as Vim
 " Last Change:  2024 Aug 15
 
@@ -63,7 +63,7 @@ hi! link Repeat Statement
 hi! link cBlock Function
 
 if (has('termguicolors') && &termguicolors) || has('gui_running')
-  let g:terminal_ansi_colors = [s:black, s:red, s:green, s:yellow, s:blue, s:magenta, s:cyan, s:white, s:brblack, s:red, s:green, s:yellow, s:blue, s:magenta, s:cyan, s:white]
+  let g:terminal_ansi_colors = [s:black, s:red, s:green, s:yellow, s:blue, s:magenta, s:cyan, s:fg, s:brblack, s:red, s:green, s:yellow, s:blue, s:magenta, s:cyan, s:white]
   " Nvim uses g:terminal_color_{0-15} instead
   for i in range(g:terminal_ansi_colors->len())
     let g:terminal_color_{i} = g:terminal_ansi_colors[i]
@@ -89,14 +89,14 @@ execute 'hi MatchParen guifg= ' . s:NONE . ' guibg= ' . s:brblack . ' gui= ' . s
 execute 'hi ModeMsg guifg= ' . s:NONE . ' guibg= ' . s:NONE . ' gui= ' . s:bold . ' ctermfg= ' . s:NONE . ' ctermbg= ' . s:NONE . ' cterm= ' . s:bold
 execute 'hi MoreMsg guifg= ' . s:white . ' guibg= ' . s:NONE . ' gui= ' . s:bold . ' cterm= ' . s:bold
 execute 'hi NonText guifg= ' . s:brblack . ' guibg= ' . s:NONE . ' gui= ' . s:bold . ' cterm= ' . s:bold
-execute 'hi Pmenu guifg= ' . s:white . ' guibg= ' . s:black . ' gui= ' . s:NONE . ' cterm= ' . s:NONE
+execute 'hi Pmenu guifg= ' . s:fg . ' guibg= ' . s:black . ' gui= ' . s:NONE . ' cterm= ' . s:NONE
 execute 'hi PmenuSbar guifg= ' . s:NONE . ' guibg= ' . s:fg . ' gui= ' . s:NONE . ' cterm= ' . s:NONE
 execute 'hi PmenuSel guifg= ' . s:bg . ' guibg= ' . s:fg . ' gui= ' . s:NONE . ' cterm= ' . s:NONE
 execute 'hi PmenuThumb guifg= ' . s:NONE . ' guibg= ' . s:white . ' gui= ' . s:NONE . ' cterm= ' . s:NONE
 execute 'hi PmenuMatch guifg= ' . s:fg . ' guibg= ' . s:black . ' gui= ' . s:bold . ' cterm= ' . s:bold
 execute 'hi PmenuMatchSel guifg= ' . s:fg . ' guibg= ' . s:fg . ' gui= ' . s:bold . ' cterm= ' . s:bold
 execute 'hi Question guifg= ' . s:fg . ' guibg= ' . s:NONE . ' gui= ' . s:bold . ' cterm= ' . s:bold
-execute 'hi Search guifg= ' . s:bg . ' guibg= ' . s:green . ' gui= ' . s:NONE . ' cterm= ' . s:NONE
+execute 'hi Search guifg= ' . s:NONE . ' guibg= ' . s:NONE . ' gui= ' . s:NONE . ' cterm= ' . s:reverse
 execute 'hi SignColumn guifg= ' . s:cyan . ' guibg= ' . s:NONE . ' gui= ' . s:NONE . ' cterm= ' . s:NONE
 execute 'hi SpecialKey guifg= ' . s:cyan . ' guibg= ' . s:NONE . ' gui= ' . s:NONE . ' cterm= ' . s:NONE
 execute 'hi SpellBad guifg= ' . s:magenta . ' guibg= ' . s:NONE . ' guisp= ' . s:red . ' gui= ' . s:undercurl . ' cterm= ' . s:underline
@@ -116,13 +116,13 @@ execute 'hi VisualNOS guifg= ' . s:NONE . ' guibg= ' . s:bg . ' gui= ' . s:bold 
 execute 'hi WarningMsg guifg= ' . s:magenta . ' guibg= ' . s:NONE . ' gui= ' . s:NONE . ' cterm= ' . s:NONE
 execute 'hi WildMenu guifg= ' . s:bg . ' guibg= ' . s:green . ' gui= ' . s:NONE . ' cterm= ' . s:NONE
 execute 'hi Comment guifg= ' . s:brblack . ' guibg= ' . s:NONE . ' gui= ' . s:NONE . ' cterm= ' . s:NONE
-execute 'hi Constant guifg= ' . s:red . ' guibg= ' . s:NONE . ' gui= ' . s:NONE . ' cterm= ' . s:NONE
+execute 'hi Constant guifg= ' . s:red . ' guibg= ' . s:NONE . ' gui= ' . s:NONE . ' cterm= ' . s:bold
 execute 'hi String guifg= ' . s:green . ' guibg= ' . s:NONE . ' gui= ' . s:NONE . ' cterm= ' . s:NONE
 execute 'hi Error guifg= ' . s:white . ' guibg= ' . s:magenta . ' gui= ' . s:NONE . ' cterm= ' . s:NONE
 execute 'hi Function guifg= ' . s:blue . ' guibg= ' . s:NONE . ' gui= ' . s:NONE . ' cterm= ' . s:NONE
 execute 'hi Identifier guifg= ' . s:fg . ' guibg= ' . s:NONE . ' gui= ' . s:NONE . ' cterm= ' . s:NONE
 execute 'hi Ignore guifg= ' . s:bg . ' guibg= ' . s:bg . ' gui= ' . s:NONE . ' cterm= ' . s:NONE
-execute 'hi Operator guifg= ' . s:white . ' guibg= ' . s:NONE . ' gui= ' . s:NONE . ' cterm= ' . s:NONE
+execute 'hi Operator guifg= ' . s:fg . ' guibg= ' . s:NONE . ' gui= ' . s:NONE . ' cterm= ' . s:NONE
 execute 'hi PreProc guifg= ' . s:magenta . ' guibg= ' . s:NONE . ' gui= ' . s:NONE . ' cterm= ' . s:NONE
 execute 'hi Special guifg= ' . s:white . ' guibg= ' . s:NONE . ' gui= ' . s:NONE . ' cterm= ' . s:NONE
 execute 'hi Statement guifg= ' . s:magenta . ' guibg= ' . s:NONE . ' gui= ' . s:bold . ' cterm= ' . s:NONE
