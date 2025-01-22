@@ -39,8 +39,8 @@ alias batt="~/.scripts/battery.sh"
 alias fetch="~/code/hfetch/hfetch"
 
 # shorteners
-alias n=nvim
-alias v=vim
+# alias n=nvim
+# alias v=vim
 alias sn='sudo -E -s nvim' # perserve env (colors and this stuff)
 alias gp="git push"
 alias ga="git add ."
