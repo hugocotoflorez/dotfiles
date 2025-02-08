@@ -1,6 +1,8 @@
 #!/bin/zsh
 # apply color schemes
 alias grep='grep --color=auto'
+alias pacman='pacman --color=auto'
+alias yay='yay --color=auto'
 alias bat="bat --theme=OneHalfDark"
 alias printc='for C in {30..37}; do echo -en "\e[${C}m${C} "; done; echo;'
 
