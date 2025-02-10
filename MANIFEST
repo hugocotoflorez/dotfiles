@@ -12,3 +12,4 @@ gtk-3.0|symlink|.config
 .zshrc|symlink|
 .zprofile|symlink|
 .vim|symlink|
+.hsllrc|symlink|

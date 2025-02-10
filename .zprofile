@@ -1,5 +1,8 @@
 [[ -f ~/.zshrc ]] && . ~/.zshrc
 
+mkdir -p /tmp/Downloads
+ln -sf /tmp/Downloads -t ~/.
+
 if [[ -n "$SSH_CONNECTION" ]]; then
     return
 

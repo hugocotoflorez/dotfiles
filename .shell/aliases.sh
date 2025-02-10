@@ -54,7 +54,7 @@ alias ffind='find -type f -name'
 # others
 alias aliases='$EDITOR ~/.shell/aliases.sh'
 alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
-alias usc="firefox cv.usc.es/my/courses.php &! exit"
+alias toggle_touchpad="sudo ~/dotfiles/toggle_touchpad.sh"
 
 
 alias dveaber="GDK_BACKEND=x11 dbeaver"
