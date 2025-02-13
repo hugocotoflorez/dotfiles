@@ -13,3 +13,4 @@ gtk-3.0|symlink|.config
 .zprofile|symlink|
 .vim|symlink|
 .hsllrc|symlink|
+eww|symlink|.config
