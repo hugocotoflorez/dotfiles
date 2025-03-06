@@ -1,10 +1,5 @@
 
 @-moz-document domain(github.com) {
-
-        body {
-                font-family: "source code pro" !important;
-        }
-
         /* string */
     span.pl-s {
         color: #aaaaaa !important;
