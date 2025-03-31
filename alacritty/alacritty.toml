@@ -4,19 +4,19 @@ general.import = [ "~/.config/alacritty/themes/onedark.toml" ]
 size = 18.0
 
 [font.bold]
-family = "sauce code pro nerd font"
+family = "Iosevka NFM"
 style = "bold"
 
 [font.bold_italic]
-family = "sauce code pro nerd font"
+family = "Iosevka NFM"
 style = "Bold Italic"
 
 [font.italic]
-family = "sauce code pro nerd font"
+family = "Iosevka NFM"
 style = "Italic"
 
 [font.normal]
-family = "sauce code pro nerd font"
+family = "Iosevka NFM"
 style = "Regular"
 
 [keyboard]

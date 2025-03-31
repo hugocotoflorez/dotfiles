@@ -8,12 +8,12 @@ alias printc='for C in {30..37}; do echo -en "\e[${C}m${C} "; done; echo;'
 
 # eza (ls with colors), ls and ranger (cli file explorer)
 alias tree='eza -T'
-alias ls='eza --color=auto --icons=auto --sort=extension --group-directories-first'
+# alias ls='eza --color=auto --icons=auto --sort=extension --group-directories-first'
+alias ls='ls --color=auto'
 alias la='ls -a'
 alias laa='ls -Alh'
 alias lg='ls -A | grep'
-alias lt="eza --color=auto --sort=newest"
-alias lr="yazi"
+# alias lt="eza --color=auto --sort=newest"
 
 # cd
 alias cd..='cd ..' # best remap ever created

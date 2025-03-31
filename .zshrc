@@ -10,5 +10,4 @@ source ~/.shell/options.sh
 #     source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 # fi
 
-
-. "$HOME/.cargo/env"
+todo -week -quiet

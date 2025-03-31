@@ -97,7 +97,7 @@
     "custom/clock": {
         // "timezone": "America/New_York",
         //"format": "{:%a %b %e  %I:%M%p}",
-        "exec": "date +\"Time: %_I h %M min\"",
+        "exec": "date +\"%a %b %e  %I:%M %p\"",
         "interval": 15
     },
     "cpu": {
