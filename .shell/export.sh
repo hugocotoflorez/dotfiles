@@ -16,5 +16,6 @@ export XDG_PICTURES_DIR="~/Pictures"
 #export XDG_CURRENT_DESKTOP="Hyprland"
 
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="./bin:$PATH:" # python venv
 
 export HOST # for hsll
