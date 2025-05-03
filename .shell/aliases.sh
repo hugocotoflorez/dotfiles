@@ -59,3 +59,8 @@ alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias dveaber="GDK_BACKEND=x11 dbeaver"
 alias dbeaber="GDK_BACKEND=x11 dbeaver"
 
+
+alias snus='sudo ~/.local/bin/snx -s secure.cesga.es -u cursoc52'
+alias snusd='sudo ~/.local/bin/snx -d'
+alias cesga='TERM=xterm ssh cursoc52@ft3.cesga.es'
+

@@ -24,6 +24,7 @@ dunst
 ed
 efibootmgr
 eza
+fd
 feh
 firefox
 freeglut
@@ -77,13 +78,14 @@ obs-studio
 pavucontrol
 pinta
 pipewire
-pipewire-alsa
 pipewire-jack
 polkit-kde-agent
 postgresql
 powertop
+pulseaudio
 pulseaudio-alsa
 pulseaudio-bluetooth
+pulseaudio-jack
 python-dbus
 python-pip
 qt5-wayland
@@ -94,7 +96,7 @@ rust
 slurp
 smartmontools
 sof-firmware
-spotify-adblock-git
+spotify-adblock
 staruml
 strace
 sweet-gtk-theme-dark

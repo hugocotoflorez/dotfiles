@@ -136,7 +136,7 @@ AllowShortFunctionsOnASingleLine: None
 
 # AllowShortIfStatementsOnASingleLine (bool)
 # If true, if (a) return; can be put on a single line.
-AllowShortIfStatementsOnASingleLine: false
+AllowShortIfStatementsOnASingleLine: true
 
 # AllowShortLoopsOnASingleLine (bool)
 # If true, while (true) continue; can be put on a single line.
@@ -180,6 +180,9 @@ BinPackParameters: true
 #   bool BeforeElse Wrap before else.
 #   bool IndentBraces Indent the wrapped braces themselves.
 #BraceWrapping:
+
+# indent #if - #else
+# IndentPPDirectives: BeforeHash
 
 # BreakAfterJavaFieldAnnotations (bool)
 # Break after each annotation on a field in Java files.
