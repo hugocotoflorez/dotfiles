@@ -14,3 +14,4 @@ gtk-3.0|symlink|.config
 .vim|symlink|
 .hsllrc|symlink|
 eww|symlink|.config
+mimeapps.list|symlink|.config

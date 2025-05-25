@@ -1,17 +1,17 @@
 # ui colors and font
-set default-fg "#abb2bf"
-set default-bg "#282c34"
-set statusbar-fg "#abb2bf"
-set statusbar-bg "#282c34"
+set default-fg "#9d9d9d"
+set default-bg "#272727"
+set statusbar-fg "#9d9d9d"
+set statusbar-bg "#272727"
 set font "sauce code pro nerd font 16"
 
 # dark theme
 set recolor true
-set recolor-lightcolor "#282c34"
-set recolor-darkcolor "#abb2bf"
+set recolor-lightcolor "#272727"
+set recolor-darkcolor "#9d9d9d"
 
 #increment j-k scroll
-set scroll-step 40
+set scroll-step 80
 
 # vim binds
 map l navigate next
@@ -24,3 +24,4 @@ map <C-+> zoom in
 map <C-=> zoom in
 map <C--> zoom out
 
+set selection-clipboard clipboard

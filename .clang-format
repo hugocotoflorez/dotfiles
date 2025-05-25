@@ -14,7 +14,7 @@
 #   Chromium A style complying with Chromium’s style guide
 #   Mozilla A style complying with Mozilla’s style guide
 #   WebKit A style complying with WebKit’s style guide
-#BasedOnStyle:
+BasedOnStyle: LLVM
 
 # TabWidth (unsigned)
 # The number of columns used for tab stops.
@@ -194,7 +194,7 @@ BinPackParameters: true
 #   BOS_None (in configuration: None) Break after operators.
 #   BOS_NonAssignment (in configuration: NonAssignment) Break before operators that aren’t assignments.
 #   BOS_All (in configuration: All) Break before operators.
-BreakBeforeBinaryOperators: false
+BreakBeforeBinaryOperators: None
 
 # BreakBeforeBraces (BraceBreakingStyle)
 # The brace breaking style to use.

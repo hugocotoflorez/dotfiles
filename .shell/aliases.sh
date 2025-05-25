@@ -6,14 +6,12 @@ alias yay='yay --color=auto'
 alias bat="bat --theme=OneHalfDark"
 alias printc='for C in {30..37}; do echo -en "\e[${C}m${C} "; done; echo;'
 
-# eza (ls with colors), ls and ranger (cli file explorer)
+# eza (ls with colors) and ls
 alias tree='eza -T'
-# alias ls='eza --color=auto --icons=auto --sort=extension --group-directories-first'
 alias ls='ls --color=auto'
 alias la='ls -a'
 alias laa='ls -Alh'
 alias lg='ls -A | grep'
-# alias lt="eza --color=auto --sort=newest"
 
 # cd
 alias cd..='cd ..' # best remap ever created
@@ -37,28 +35,24 @@ alias zzz="systemctl suspend"
 
 # tools launchers
 alias bluetooth="~/.config/wofi/bluetooth.sh"
-alias batt="~/.scripts/battery.sh"
 alias fetch="~/code/hfetch/hfetch"
 
 # shorteners
-# alias n=nvim
-# alias v=vim
-alias sn='sudo -E -s nvim' # perserve env (colors and this stuff)
 alias gp="git push"
 alias ga="git add ."
 alias wifi="nmcli device wifi connect" # wifi <tab>
 alias icat="kitten icat"
-alias note='nvim -c "ObsidianSearch"'
 alias ffind='find -type f -name'
+alias zathura='zathura --fork '
+alias za=zathura
 
 # others
 alias aliases='$EDITOR ~/.shell/aliases.sh'
 alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 
-
 alias dveaber="GDK_BACKEND=x11 dbeaver"
 alias dbeaber="GDK_BACKEND=x11 dbeaver"
-
+alias dbeaver="GDK_BACKEND=x11 dbeaver"
 
 alias snus='sudo ~/.local/bin/snx -s secure.cesga.es -u cursoc52'
 alias snusd='sudo ~/.local/bin/snx -d'
