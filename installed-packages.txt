@@ -38,6 +38,7 @@ git
 git-filter-repo
 glfw
 glm
+google-chrome
 grim
 grub
 gst-plugin-pipewire
@@ -67,7 +68,6 @@ lib32-nss
 libc++
 libpulse
 libreoffice-still-eu
-libstdc++5
 libva-intel-driver
 linux
 linux-firmware
@@ -91,6 +91,7 @@ nvidia-utils
 obs-studio
 obsidian
 opengl-man-pages
+pandoc-cli
 pavucontrol
 pinta
 pipewire
@@ -120,8 +121,10 @@ sweet-gtk-theme-dark
 tcsh
 texlive-binextra
 thunar
+tmux
 ttf-iosevka-nerd
 ttf-sourcecodepro-nerd
+tty-clock
 unrar
 unzip
 valgrind
@@ -130,12 +133,12 @@ vlc
 vscodium-bin
 vulkan-intel
 vulkan-radeon
+w3m
 waybar
 wget
 wine
 wine-gecko
 wine-mono
-winetricks
 wireless_tools
 wireplumber
 wl-clipboard
