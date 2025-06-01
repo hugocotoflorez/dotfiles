@@ -6,7 +6,7 @@ alias yay='yay --color=auto'
 alias bat="bat --theme=OneHalfDark"
 alias printc='for C in {30..37}; do echo -en "\e[${C}m${C} "; done; echo;'
 
-# eza (ls with colors) and ls
+# eza (ls with icons) and ls
 alias tree='eza -T'
 alias ls='ls --color=auto'
 alias la='ls -a'
@@ -16,8 +16,6 @@ alias lg='ls -A | grep'
 # cd
 alias cd..='cd ..' # best remap ever created
 alias dw='cd ~/Downloads/'
-alias :so='source ~/.zshrc'
-alias :q='exit' # i use vim btw
 alias ..='cd ..'
 alias ....='cd ../..'
 alias ......='cd ../../..'
@@ -45,6 +43,9 @@ alias icat="kitten icat"
 alias ffind='find -type f -name'
 alias zathura='zathura --fork '
 alias za=zathura
+alias so='source ~/.zshrc'
+alias q='exit' # i use vim btw
+alias py=python3
 
 # others
 alias aliases='$EDITOR ~/.shell/aliases.sh'
