@@ -15,3 +15,6 @@ gtk-3.0|symlink|.config
 .hsllrc|symlink|
 eww|symlink|.config
 mimeapps.list|symlink|.config
+chatgpt.desktop|symlink|.local/share/applications
+toggle-touchpad.desktop|symlink|.local/share/applications
+python.desktop|symlink|.local/share/applications

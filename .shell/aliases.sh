@@ -8,8 +8,8 @@ alias printc='for C in {30..37}; do echo -en "\e[${C}m${C} "; done; echo;'
 
 # eza (ls with icons) and ls
 alias tree='eza -T'
-alias ls='ls --color=auto'
-alias la='ls -a'
+alias ls='ls --color=auto -X'
+alias la='ls -A'
 alias laa='ls -Alh'
 alias lg='ls -A | grep'
 
