@@ -33,7 +33,6 @@ alias zzz="systemctl suspend"
 
 # tools launchers
 alias bluetooth="~/.config/wofi/bluetooth.sh"
-alias fetch="~/code/hfetch/hfetch"
 
 # shorteners
 alias gp="git push"

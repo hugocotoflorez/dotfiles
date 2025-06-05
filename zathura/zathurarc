@@ -18,6 +18,8 @@ map l navigate next
 map h navigate previous
 map k scroll up
 map j scroll down
+map K scroll up  # todo: do it like 3k
+map J scroll down
 
 # zoom
 map <C-+> zoom in

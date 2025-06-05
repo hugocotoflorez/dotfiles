@@ -12,4 +12,4 @@ source ~/.shell/options.sh
 #     source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 # fi
 
-# todo -week -quiet
+todo -week -quiet
