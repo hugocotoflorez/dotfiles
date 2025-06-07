@@ -10,6 +10,9 @@ application/xhtml+xml=firefox.desktop
 application/x-extension-xhtml=firefox.desktop
 application/x-extension-xht=firefox.desktop
 application/pdf=org.pwmt.zathura.desktop
+application/md=nvim.desktop
+application/txt=nvim.desktop
+application/c=nvim.desktop
 
 [Added Associations]
 x-scheme-handler/http=firefox.desktop;

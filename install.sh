@@ -15,3 +15,16 @@ yay -S --noconfirm --needed `cat ./installed-packages.txt`
 
 ./deploy.sh ./MANIFEST
 sudo ./deploy.sh ./MANIFEST
+
+function clone_install() {
+        if ! exist "$1"; then
+                git clone "https://github.com/hugocotoflorez/$1"
+                cd "$1"
+                make install
+        fi
+}
+
+# TODO: check that this work
+clone_install tetris
+clone_install hfetch
+
