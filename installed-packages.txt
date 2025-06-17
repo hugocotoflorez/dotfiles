@@ -3,6 +3,7 @@ adapta-gtk-theme
 adw-gtk-theme
 alacritty
 alsa-utils
+anki
 arc-gtk-theme
 arc-solid-gtk-theme
 asciiquarium
@@ -86,6 +87,7 @@ ncdu
 neovim
 network-manager-applet
 networkmanager
+nmap
 npm
 nvidia-utils
 obs-studio
@@ -93,6 +95,7 @@ obsidian
 opengl-man-pages
 pandoc-cli
 pavucontrol
+pdfgrep
 pinta
 pipewire
 pipewire-alsa
@@ -103,6 +106,8 @@ postgresql
 powertop
 python-dbus
 python-pip
+qemu-img
+qemu-system-mips
 qt5-wayland
 qt6-wayland
 qutebrowser
@@ -130,7 +135,6 @@ unzip
 valgrind
 virtualbox
 vlc
-vscodium-bin
 vulkan-intel
 vulkan-radeon
 w3m

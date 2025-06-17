@@ -102,7 +102,7 @@ AlignOperands: true
 
 # AlignTrailingComments (bool)
 # If true, aligns trailing comments.
-AlignTrailingComments: false #true
+AlignTrailingComments: true
 
 AlignConsecutiveBitFields: true
 

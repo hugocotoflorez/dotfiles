@@ -18,3 +18,4 @@ mimeapps.list|symlink|.config
 chatgpt.desktop|symlink|.local/share/applications
 toggle-touchpad.desktop|symlink|.local/share/applications
 python.desktop|symlink|.local/share/applications
+balatro.desktop|symlink|.local/share/applications

@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Balatro
+Exec=wine /home/hugo/Documents/Balatro/Balatro.exe
+Icon=/home/hugo/Documents/Balatro/icon.png
+Type=Application
+

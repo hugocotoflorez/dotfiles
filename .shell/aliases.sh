@@ -45,6 +45,7 @@ alias za=zathura
 alias so='source ~/.zshrc'
 alias q='exit' # i use vim btw
 alias py=python3
+alias vim=nvim
 
 # others
 alias aliases='$EDITOR ~/.shell/aliases.sh'
