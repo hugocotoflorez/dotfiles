@@ -1,1 +1,0 @@
-Nvim config at https://github.com/hugocotoflorez/nvim

@@ -17,10 +17,12 @@ yay -S --noconfirm --needed `cat ./installed-packages.txt`
 sudo ./deploy.sh ./MANIFEST
 
 function clone_install() {
-        if ! exist "$1"; then
+        if ! exist "$1" && ! [ -d "$1" ]; then
                 git clone "https://github.com/hugocotoflorez/$1"
                 cd "$1"
                 make install
+                cd ..
+                rm -rf "$1"
         fi
 }
 
