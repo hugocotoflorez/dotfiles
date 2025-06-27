@@ -12,6 +12,7 @@ base
 base-devel
 bat
 bear
+bind
 blender
 bluez
 bluez-utils
@@ -121,6 +122,7 @@ smartmontools
 sof-firmware
 spotify-adblock
 staruml
+steam
 strace
 sweet-gtk-theme-dark
 tcsh

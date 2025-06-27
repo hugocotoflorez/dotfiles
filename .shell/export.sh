@@ -18,4 +18,6 @@ export XDG_PICTURES_DIR="~/Pictures"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="./bin:$PATH:" # python venv
 
+export GUILE_AUTO_COMPILE=0
+
 export HOST # for hsll
