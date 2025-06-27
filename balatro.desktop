@@ -1,5 +1,8 @@
 [Desktop Entry]
 Name=Balatro
+Comment=Play this game on Steam
 Exec=steam steam://rungameid/2379780
+Icon=steam_icon_2379780
+Terminal=false
 Type=Application
-Icon=/home/hugo/Pictures/balatro-icon.png
+Categories=Game;

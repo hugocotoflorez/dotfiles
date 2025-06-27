@@ -1,9 +1,13 @@
 [user]
 	email = hugocoto100305@gmail.com
-	name = hugocotoflorez
+	name = Hugo Coto Florez
+[credentials]
+	helper = store
 [credential]
 	helper = store
-[pull]
-	rebase = true
 [init]
 	defaultBranch = main
+[push "autoSetup"]
+	Remote = true
+[push]
+	autoSetupRemote = true

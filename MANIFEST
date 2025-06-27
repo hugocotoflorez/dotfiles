@@ -20,3 +20,9 @@ toggle-touchpad.desktop|symlink|.local/share/applications
 python.desktop|symlink|.local/share/applications
 batt|symlink|.local/bin
 nvim|symlink|.config
+.gdbinit|symlink|
+.bashrc|symlink|
+.bash_profile|symlink|
+.gitconfig|symlink|
+user-dirs.dirs|symlink|.config
+user-dirs.locale|symlink|.config
