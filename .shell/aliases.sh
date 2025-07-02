@@ -22,7 +22,6 @@ alias ......='cd ../../..'
 
 # app launchers
 alias open='firefox $(fzf) &! exit'
-alias zopen='zathura $(fzf) &! exit'
 # alias logisim="wmname compiz && logisim-evolution &! exit" # bspwm error solved
 alias logisim="logisim-evolution &! exit"
 alias snvim='sudo -E -s nvim' # perserve env (colors and this stuff)
@@ -40,8 +39,7 @@ alias ga="git add ."
 alias wifi="nmcli device wifi connect" # wifi <tab>
 alias icat="kitten icat"
 alias ffind='find -type f -name'
-alias zathura='zathura --fork '
-alias za=zathura
+alias za='zathura --fork '
 alias so='source ~/.zshrc'
 alias q='exit' # i use vim btw
 alias py=python3

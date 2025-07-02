@@ -13,7 +13,6 @@ application/pdf=org.pwmt.zathura.desktop
 application/md=nvim.desktop
 application/txt=nvim.desktop
 application/c=nvim.desktop
-application/h=nvim.desktop
 
 [Added Associations]
 x-scheme-handler/http=firefox.desktop;
