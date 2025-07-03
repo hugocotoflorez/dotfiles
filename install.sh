@@ -11,6 +11,7 @@ function clone_install() {
                 cd "$1"
                 make install
                 cd ..
+                echo "$1" >> .gitignore
         fi
 }
 
@@ -21,8 +22,9 @@ if ! exist yay; then
         makepkg -si
 fi
 
-sudo ls -s default.conf /etc/keyd
-sudo ls -s pacman.conf /etc
+sudo mkdir -p /etc/keyd
+sudo ln -s default.conf /etc/keyd
+sudo ln -s pacman.conf /etc/pacman.d/
 
 git submodule update --init nvim
 sudo pacman -Syyu --noconfirm
