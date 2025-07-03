@@ -9,24 +9,34 @@ if ! exist yay; then
         makepkg -si
 fi
 
+git submodule update --init nvim
 sudo ./sysupdate.sh
 
 yay -S --noconfirm --needed `cat ./installed-packages.txt`
+
+rm ~/.config -rf
+mkdir ~/.config
+
+sudo pacman -S git
 
 ./deploy.sh ./MANIFEST
 sudo ./deploy.sh ./MANIFEST
 
 function clone_install() {
-        if ! exist "$1" && ! [ -d "$1" ]; then
+        if [ -d "$1" ]; then
+                rm -rf "$1"
+        fi
+        if ! exist "$1"; then
                 git clone "https://github.com/hugocotoflorez/$1"
                 cd "$1"
                 make install
                 cd ..
-                rm -rf "$1"
         fi
 }
 
-# TODO: check that this work
+mkdir -p .local/bin
+
 clone_install tetris
+clone_install todo
 clone_install hfetch
 
