@@ -12,7 +12,7 @@ fi
 git submodule update --init nvim
 sudo pacman -Syyu --noconfirm
 
-cat archivo.txt | xargs -P 3 -I {} bash -c 'yay -S --needed --noconfirm "{}" || echo "{}" >> failed-packages.txt'
+cat ./installed-packages.txt | xargs -P 3 -I {} bash -c 'yay -S --needed --noconfirm "{}" || echo "{}" >> failed-packages.txt'
 
 rm ~/.config -rf
 mkdir ~/.config
