@@ -15,7 +15,9 @@
 | Kernels | | I prefer the LTS |
 | Network | | NetworkManager |
 | Timezone |  | Madrid |
-Install git also
+| Additional packages |  | git |
+
+enable multilib
 
 Then press Install, yes, reboot system.
 

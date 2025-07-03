@@ -10,10 +10,9 @@ if ! exist yay; then
 fi
 
 git submodule update --init nvim
-sudo bash -c "which reflector && reflector -c fr -n 10 > /etc/pacman.d/mirrorlist"
 sudo pacman -Syyu --noconfirm
 
-yay -S --noconfirm --needed `cat ./installed-packages.txt`
+cat archivo.txt | xargs -P 3 -I {} bash -c 'yay -S --needed --noconfirm "{}" || echo "{}" >> failed-packages.txt'
 
 rm ~/.config -rf
 mkdir ~/.config
