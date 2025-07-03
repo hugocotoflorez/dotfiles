@@ -1,9 +1,10 @@
 /* Placed in ~/.mozilla/firefox/XXXXXXXX.default-release/chrome/ */
 
-body {
+* , body {
     font-family: "sf pro display" !important;
     font-size: 16px !important;
     color: #9d9d9d !important;
+    background: #272727 !important;
     border: none !important;
     outline: none !important;
     box-shadow: none !important;

@@ -26,6 +26,8 @@ sudo mkdir -p /etc/keyd
 sudo ln -s default.conf /etc/keyd
 sudo ln -s pacman.conf /etc/pacman.d/
 
+
+
 git submodule update --init nvim
 sudo pacman -Syyu --noconfirm
 
@@ -44,3 +46,10 @@ clone_install hfetch
 
 yay -S --needed --noconfirm `cat ./installed-packages.txt`
 
+SCRIPT_DIR="$( cd "$( dirname "$BASH_SOURCE[0]" )" && pwd )"
+
+firefox_path=$(grep -E 'Path=.*default-release' ~/.mozilla/firefox/profiles.ini | tail -n1 | cut -d= -f2)
+firefox_full_path="$HOME/.mozilla/firefox/$firefox_path"
+mkdir -p "$firefox_full_path/chrome"
+ln -s "$SCRIPT_DIR/userContent.css" "$firefox_full_path/chrome/userContent.css"
+ln -s "$SCRIPT_DIR/userChrome.css" "$firefox_full_path/chrome/userChrome.css"
