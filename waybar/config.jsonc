@@ -97,7 +97,7 @@
     "custom/clock": {
         // "timezone": "America/New_York",
         //"format": "{:%a %b %e  %I:%M%p}",
-        "exec": "date +\"%a %b %e  %I:%M %p\"",
+        "exec": "date +\"%A, %e %B  %I:%M %p\"",
         "interval": 15
     },
     "cpu": {
@@ -122,7 +122,7 @@
     },
     "battery": {
         "states": {
-            "good": 100,
+            "good": 80,
             "warning": 20,
             "critical": 10
         },
@@ -159,7 +159,6 @@
         //"tooltip-format": "{ifname} via {gwaddr} ",
         //"format-linked": "{ifname} (No IP) ",
         //"format-disconnected": "Disconnected ⚠",
-        //"format-alt": "{ifname}: {ipaddr}/{cidr}"
         "format": "{icon}  {essid}",
         "format-disconnected": "󰣼",
         "format-icons":[ "󰣾", "󰣴", "󰣶", "󰣸","󰣺" ]
