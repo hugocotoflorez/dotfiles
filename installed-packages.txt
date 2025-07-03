@@ -15,6 +15,7 @@ bind
 blender
 bluez
 bluez-utils
+brave-bin
 breeze-gtk
 brightnessctl
 chromium
@@ -81,6 +82,7 @@ mingw-w64-gcc
 nano
 nasm
 ncdu
+ncspot
 neovim
 network-manager-applet
 networkmanager
@@ -106,8 +108,11 @@ python-dbus
 python-opencv
 python-pillow
 python-pip
+qemu-hw-display-virtio-vga
 qemu-img
 qemu-system-mips
+qemu-system-x86
+qemu-ui-gtk
 qt5-wayland
 qt6-wayland
 qutebrowser
@@ -125,6 +130,7 @@ strace
 tcsh
 texlive-binextra
 thunar
+tigervnc
 tmux
 ttf-iosevka-nerd
 ttf-sourcecodepro-nerd
@@ -134,10 +140,12 @@ unzip
 valgrind
 virtualbox
 vlc
+vncdotool
 vulkan-intel
 vulkan-radeon
 w3m
 waybar
+wayvnc
 wget
 wine
 wine-gecko
@@ -146,6 +154,7 @@ wireless_tools
 wireplumber
 wl-clipboard
 wofi
+x11vnc
 xdg-desktop-portal-hyprland
 xdg-utils
 xf86-input-synaptics

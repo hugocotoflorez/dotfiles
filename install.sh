@@ -17,8 +17,6 @@ yay -S --noconfirm --needed `cat ./installed-packages.txt`
 rm ~/.config -rf
 mkdir ~/.config
 
-sudo pacman -S git
-
 ./deploy.sh ./MANIFEST
 sudo ./deploy.sh ./MANIFEST
 
