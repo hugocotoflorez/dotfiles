@@ -28,7 +28,6 @@ sudo mkdir -p /etc/keyd
 sudo ln -sf $SCRIPT_DIR/default.conf /etc/keyd/default.conf
 sudo ln -sf $SCRIPT_DIR/pacman.conf /etc/pacman.conf
 
-
 cd $SCRIPT_DIR
 git submodule update --init nvim
 sudo pacman -Syyu --noconfirm
@@ -40,7 +39,8 @@ mkdir -p ~/.local
 mkdir -p ~/.local/bin
 mkdir -p ~/.local/share/applications
 
-bash $SCRIPT_DIR/deploy.sh $SCRIPT_DIR/MANIFEST
+cd $SCRIPT_DIR
+./deploy.sh MANIFEST
 
 cd $SCRIPT_DIR
 clone_install tetris
@@ -50,6 +50,8 @@ clone_install hfetch
 cd $SCRIPT_DIR
 yay -S --needed --noconfirm `cat ./installed-packages.txt`
 
+firefox --headless && sleep 5 && pkill firefox
+
 firefox_path=$(grep -E 'Path=.*default-release' ~/.mozilla/firefox/profiles.ini | tail -n1 | cut -d= -f2)
 if [ -z "$firefox_path" ]; then
         firefox_full_path="$HOME/.mozilla/firefox/$firefox_path"
@@ -57,3 +59,6 @@ if [ -z "$firefox_path" ]; then
         ln -s "$SCRIPT_DIR/userContent.css" "$firefox_full_path/chrome/userContent.css"
         ln -s "$SCRIPT_DIR/userChrome.css" "$firefox_full_path/chrome/userChrome.css"
 fi
+
+chsh -s $(which zsh)
+systemctl enable ly
