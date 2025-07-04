@@ -25,8 +25,10 @@ if ! exist yay; then
 fi
 
 sudo mkdir -p /etc/keyd
+sudo mkdir -p /etc/ly
 sudo ln -sf $SCRIPT_DIR/default.conf /etc/keyd/default.conf
 sudo ln -sf $SCRIPT_DIR/pacman.conf /etc/pacman.conf
+sudo ln -sf $SCRIPT_DIR/config.ini /etc/ly/config.ini
 
 cd $SCRIPT_DIR
 git submodule update --init nvim
@@ -50,7 +52,11 @@ clone_install hfetch
 cd $SCRIPT_DIR
 yay -S --needed --noconfirm `cat ./installed-packages.txt`
 
-firefox --headless && sleep 5 && pkill firefox
+chsh -s $(which zsh)
+systemctl enable ly
+
+firefox --headless &
+sleep 5 && pkill firefox
 
 firefox_path=$(grep -E 'Path=.*default-release' ~/.mozilla/firefox/profiles.ini | tail -n1 | cut -d= -f2)
 if [ -z "$firefox_path" ]; then
@@ -60,5 +66,4 @@ if [ -z "$firefox_path" ]; then
         ln -s "$SCRIPT_DIR/userChrome.css" "$firefox_full_path/chrome/userChrome.css"
 fi
 
-chsh -s $(which zsh)
-systemctl enable ly
+hyprland &!

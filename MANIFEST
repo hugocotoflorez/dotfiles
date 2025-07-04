@@ -6,6 +6,7 @@ wofi|symlink|.config
 zathura|symlink|.config
 gtk-2.0|symlink|.config
 gtk-3.0|symlink|.config
+Pictures|symlink|
 .shell|symlink|
 .zsh|symlink|
 .clang-format|symlink|
