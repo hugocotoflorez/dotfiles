@@ -1,5 +1,7 @@
 #!/bin/bash
 
+SCRIPT_DIR="$( cd "$( dirname "$BASH_SOURCE[0]" )" && pwd )"
+
 exist() { command -v "$1" >/dev/null 2>&1; }
 
 function clone_install() {
@@ -10,9 +12,9 @@ function clone_install() {
                 git clone "https://github.com/hugocotoflorez/$1"
                 cd "$1"
                 make install
-                cd ..
                 echo "$1" >> .gitignore
         fi
+        cd $SCRIPT_DIR
 }
 
 if ! exist yay; then
@@ -23,33 +25,35 @@ if ! exist yay; then
 fi
 
 sudo mkdir -p /etc/keyd
-sudo ln -s default.conf /etc/keyd
-sudo ln -s pacman.conf /etc/pacman.d/
+sudo ln -sf $SCRIPT_DIR/default.conf /etc/keyd/default.conf
+sudo ln -sf $SCRIPT_DIR/pacman.conf /etc/pacman.conf
 
 
-
+cd $SCRIPT_DIR
 git submodule update --init nvim
 sudo pacman -Syyu --noconfirm
 
 rm ~/.* -rf
 
 mkdir -p ~/.config
+mkdir -p ~/.local
 mkdir -p ~/.local/bin
 mkdir -p ~/.local/share/applications
 
-./deploy.sh ./MANIFEST
-sudo ./deploy.sh ./MANIFEST
+bash $SCRIPT_DIR/deploy.sh $SCRIPT_DIR/MANIFEST
 
+cd $SCRIPT_DIR
 clone_install tetris
 clone_install todo
 clone_install hfetch
 
+cd $SCRIPT_DIR
 yay -S --needed --noconfirm `cat ./installed-packages.txt`
 
-SCRIPT_DIR="$( cd "$( dirname "$BASH_SOURCE[0]" )" && pwd )"
-
 firefox_path=$(grep -E 'Path=.*default-release' ~/.mozilla/firefox/profiles.ini | tail -n1 | cut -d= -f2)
-firefox_full_path="$HOME/.mozilla/firefox/$firefox_path"
-mkdir -p "$firefox_full_path/chrome"
-ln -s "$SCRIPT_DIR/userContent.css" "$firefox_full_path/chrome/userContent.css"
-ln -s "$SCRIPT_DIR/userChrome.css" "$firefox_full_path/chrome/userChrome.css"
+if [ -z "$firefox_path" ]; then
+        firefox_full_path="$HOME/.mozilla/firefox/$firefox_path"
+        mkdir -p "$firefox_full_path/chrome"
+        ln -s "$SCRIPT_DIR/userContent.css" "$firefox_full_path/chrome/userContent.css"
+        ln -s "$SCRIPT_DIR/userChrome.css" "$firefox_full_path/chrome/userChrome.css"
+fi
