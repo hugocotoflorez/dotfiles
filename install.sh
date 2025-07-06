@@ -40,6 +40,8 @@ mkdir -p ~/.config
 mkdir -p ~/.local
 mkdir -p ~/.local/bin
 mkdir -p ~/.local/share/applications
+mkdir -p /tmp/Downloads/
+ln -sfn /tmp/Downloads/ "$HOME/Downloads"
 
 cd $SCRIPT_DIR
 ./deploy.sh MANIFEST
@@ -48,6 +50,7 @@ cd $SCRIPT_DIR
 clone_install tetris
 clone_install todo
 clone_install hfetch
+clone_install fl
 
 cd $SCRIPT_DIR
 yay -S --needed --noconfirm `cat ./installed-packages.txt`
@@ -59,11 +62,21 @@ firefox --headless &
 sleep 5 && pkill firefox
 
 firefox_path=$(grep -E 'Path=.*default-release' ~/.mozilla/firefox/profiles.ini | tail -n1 | cut -d= -f2)
-if [ -z "$firefox_path" ]; then
-        firefox_full_path="$HOME/.mozilla/firefox/$firefox_path"
-        mkdir -p "$firefox_full_path/chrome"
-        ln -s "$SCRIPT_DIR/userContent.css" "$firefox_full_path/chrome/userContent.css"
-        ln -s "$SCRIPT_DIR/userChrome.css" "$firefox_full_path/chrome/userChrome.css"
+if [ -n "$firefox_path" ]; then
+    firefox_full_path="$HOME/.mozilla/firefox/$firefox_path"
+    mkdir -p "$firefox_full_path/chrome"
+    ln -sf "$SCRIPT_DIR/userContent.css" "$firefox_full_path/chrome/userContent.css"
+    ln -sf "$SCRIPT_DIR/userChrome.css" "$firefox_full_path/chrome/userChrome.css"
+
+    prefs_file="$firefox_full_path/prefs.js"
+
+    sed -i '/user_pref("browser.download.dir"/d' "$prefs_file"
+    sed -i '/user_pref("browser.download.folderList"/d' "$prefs_file"
+
+    {
+        echo "user_pref(\"browser.download.dir\", \"$HOME/Downloads\");"
+        echo "user_pref(\"browser.download.folderList\", 2);"
+    } >> "$prefs_file"
 fi
 
 hyprland &!

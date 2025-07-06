@@ -28,3 +28,4 @@ nvim|symlink|.config
 user-dirs.dirs|symlink|.config
 user-dirs.locale|symlink|.config
 poweroff.desktop|symlink|.local/share/applications
+toggle_touchpad.sh|symlink|.local/bin/

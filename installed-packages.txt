@@ -23,7 +23,6 @@ cloc
 cmake
 cpio
 deepin-gtk-theme
-docker
 docker-compose
 dunst
 ed
@@ -76,6 +75,7 @@ lxde-icon-theme
 ly
 man-db
 man-pages
+mate-themes
 materia-gtk-theme
 meson
 mingw-w64-gcc
@@ -171,3 +171,4 @@ zathura-pdf-poppler
 zip
 zram-generator
 zsh
+zuki-themes

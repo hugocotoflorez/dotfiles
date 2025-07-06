@@ -1,10 +1,12 @@
 /* Placed in ~/.mozilla/firefox/XXXXXXXX.default-release/chrome/ */
 
+/* To fix: floating windows as extension confirmation are
+ * displayed out of the screen */
+
 * , body {
     font-family: "sf pro display" !important;
     font-size: 16px !important;
     color: #9d9d9d !important;
-    background: #272727 !important;
     border: none !important;
     outline: none !important;
     box-shadow: none !important;
@@ -233,3 +235,5 @@
     background: #333333 !important;
     box-shadow: none !important;
 }
+
+
