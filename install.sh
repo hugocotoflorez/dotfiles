@@ -31,10 +31,10 @@ sudo ln -sf $SCRIPT_DIR/pacman.conf /etc/pacman.conf
 sudo ln -sf $SCRIPT_DIR/config.ini /etc/ly/config.ini
 
 cd $SCRIPT_DIR
-git submodule update --init nvim
+[ -d "nvim" ] || git submodule update --init nvim
 sudo pacman -Syyu --noconfirm
 
-rm ~/.* -rf
+# rm ~/.* -rf
 
 mkdir -p ~/.config
 mkdir -p ~/.local
@@ -57,26 +57,8 @@ yay -S --needed --noconfirm `cat ./installed-packages.txt`
 
 chsh -s $(which zsh)
 systemctl enable ly
-
-firefox --headless &
-sleep 5 && pkill firefox
-
-firefox_path=$(grep -E 'Path=.*default-release' ~/.mozilla/firefox/profiles.ini | tail -n1 | cut -d= -f2)
-if [ -n "$firefox_path" ]; then
-    firefox_full_path="$HOME/.mozilla/firefox/$firefox_path"
-    mkdir -p "$firefox_full_path/chrome"
-    ln -sf "$SCRIPT_DIR/userContent.css" "$firefox_full_path/chrome/userContent.css"
-    ln -sf "$SCRIPT_DIR/userChrome.css" "$firefox_full_path/chrome/userChrome.css"
-
-    prefs_file="$firefox_full_path/prefs.js"
-
-    sed -i '/user_pref("browser.download.dir"/d' "$prefs_file"
-    sed -i '/user_pref("browser.download.folderList"/d' "$prefs_file"
-
-    {
-        echo "user_pref(\"browser.download.dir\", \"$HOME/Downloads\");"
-        echo "user_pref(\"browser.download.folderList\", 2);"
-    } >> "$prefs_file"
-fi
+systemctl enable keyd
+systemctl start ly
+systemctl start keyd
 
 hyprland &!
