@@ -1,6 +1,0 @@
-[Desktop Entry]
-Name=Python interpreter
-Exec=kitty --class floating -e python3 -q
-Icon=/home/hugo/Pictures/python-icon.webp
-Type=Application
-

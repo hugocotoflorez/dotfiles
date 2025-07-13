@@ -16,9 +16,7 @@ Pictures|symlink|
 .hsllrc|symlink|
 eww|symlink|.config
 mimeapps.list|symlink|.config
-chatgpt.desktop|symlink|.local/share/applications
 toggle-touchpad.desktop|symlink|.local/share/applications
-python.desktop|symlink|.local/share/applications
 batt|symlink|.local/bin
 nvim|symlink|.config
 .gdbinit|symlink|
@@ -27,5 +25,4 @@ nvim|symlink|.config
 .gitconfig|symlink|
 user-dirs.dirs|symlink|.config
 user-dirs.locale|symlink|.config
-poweroff.desktop|symlink|.local/share/applications
 toggle_touchpad.sh|symlink|.local/bin/

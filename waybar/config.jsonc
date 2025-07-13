@@ -15,6 +15,7 @@
     ],
     "modules-right": [
         "battery",
+        "power-profiles-daemon",
         "network",
         "pulseaudio",
         "hyprland/language"
@@ -23,7 +24,7 @@
     // Modules configuration
     "hyprland/workspaces": {
         "disable-scroll": true,
-        "format":" {name} ",
+        "format":"{name}",
         "format-incons":{
             "1": "",
             "active": ""
@@ -126,13 +127,13 @@
             "warning": 20,
             "critical": 10
         },
-        "format": "{icon}    {capacity}%",
+        "format": "{icon} {capacity}%",
         //"format": "{capacity}% {icon}",
         //"format-charging": "",
         //"format-plugged": "{capacity}% ",
         //"format-alt": "{capacity}% {time}",
-        "format-critical": "{icon}    {capacity}% ({time})",
-        "format-warning":  "{icon}    {capacity}%",
+        // "format-critical": "{icon}    {capacity}% ({time})",
+        // "format-warning":  "{icon}    {capacity}%",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
         "format-icons": ["", "", "", "", "", ""],
@@ -146,7 +147,7 @@
       "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
       "tooltip": true,
       "format-icons": {
-        "default": "",
+        "default": "D",
         "performance": "",
         "balanced": "",
         "power-saver": ""
@@ -159,18 +160,18 @@
         //"tooltip-format": "{ifname} via {gwaddr} ",
         //"format-linked": "{ifname} (No IP) ",
         //"format-disconnected": "Disconnected ⚠",
-        "format": "{icon}  {essid}",
+        "format": "{icon} {essid}",
         "format-disconnected": "󰣼",
         "format-icons":[ "󰣾", "󰣴", "󰣶", "󰣸","󰣺" ]
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{icon}  {volume}%",
-        "format-bluetooth": " {icon}  {volume}%",
-        "format-bluetooth-muted": "  ",
-        "format-muted": " ",
-        "format-source": " ",
-        "format-source-muted": " ",
+        "format": "{icon} {volume}%",
+        "format-bluetooth": " {icon} {volume}%",
+        "format-bluetooth-muted": "  ",
+        "format-muted": "",
+        "format-source": "",
+        "format-source-muted": "",
         "format-icons": ["", "", ""],
         "on-click": "pavucontrol"
         },

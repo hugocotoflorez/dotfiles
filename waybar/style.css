@@ -1,14 +1,13 @@
 
 * {
-    /* font-family: SF Pro Display, SF Mono; */
-    font-family: Iosevka Mono Bold;
+    font-family: Iosevka NFP Medium;
     font-size: 16px;
     background-color: transparent;
-    color: #9d9d9d; /* default text color */
+    color: #f0f0f0; /* default text color */
 }
 
 window#waybar {
-    background-color: #272727;
+    background-color: #424751;
     opacity: 1.0;
     /* border-top: 1px solid #000000; */
     /* transition-property: background-color; */
@@ -50,7 +49,7 @@ button {
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 button:hover {
     background: inherit;
-    box-shadow: inset 0 -3px #9d9d9d;
+    box-shadow: inset 0 -3px #f0f0f0;
 }
 
 /* you can set a style on hover for any module like this */
@@ -73,7 +72,7 @@ button:hover {
  */
 #workspaces button.active {
     /* background-color: #3b3b3b; */
-    box-shadow: inset 0 -1px #9d9d9d;
+    box-shadow: inset 0 -1px #f0f0f0;
 }
 
 #workspaces button.urgent {
@@ -140,38 +139,35 @@ button:hover {
 }
 
 #battery.charging, #battery.plugged {
-    color: #98c379;
+    color: #d7ffbd;
 }
 
 #battery.warning:not(.charging) {
-    color: #d19a66;
+    color: #ffffbd;
 }
 
 #battery.critical:not(.charging) {
-    color: #e06c75;
+    color: #ffa3b6;
 }
 
 #power-profiles-daemon {
-    padding-right: 15px;
+    padding-right: 10px;
 }
 
-#power-profiles-daemon.performance {
-    background-color: #f53c3c;
-    color: #ffffff;
-}
-
-#power-profiles-daemon.balanced {
-    background-color: #2980b9;
-    color: #ffffff;
-}
-
-#power-profiles-daemon.power-saver {
-    background-color: #2ecc71;
-    color: #000000;
-}
+/* #power-profiles-daemon.performance { */
+/*     color: #f53c3c; */
+/* } */
+/**/
+/* #power-profiles-daemon.balanced { */
+/*     color: #2980b9; */
+/* } */
+/**/
+/* #power-profiles-daemon.power-saver { */
+/*     color: #2ecc71; */
+/* } */
 
 label:focus {
-    background-color: #abb2bf;
+    background-color: #424751;
 }
 
 #cpu {
@@ -299,7 +295,7 @@ label:focus {
 }
 
 #keyboard-state {
-    background: #97e1ad;
+    background: #FFFFFF;
     color: #000000;
     padding: 0 0px;
     margin: 0 5px;
