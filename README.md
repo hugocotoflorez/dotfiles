@@ -4,13 +4,15 @@ Dotfiles from my Arch Linux - Laptop setup! Updated weekly.
 
 # [Hyprland]
 
-<img src="https://raw.githubusercontent.com/hugocotoflorez/dotfiles/main/.img/image1.png" align="center" alt="picture">
-<img src="https://raw.githubusercontent.com/hugocotoflorez/dotfiles/main/.img/image6.png" align="center" alt="picture">
-<img src="https://raw.githubusercontent.com/hugocotoflorez/dotfiles/main/.img/image2.png" align="center" alt="picture">
-<img src="https://raw.githubusercontent.com/hugocotoflorez/dotfiles/main/.img/image5.png" align="center" alt="picture">
-<img src="https://raw.githubusercontent.com/hugocotoflorez/dotfiles/main/.img/image3.png" align="center" alt="picture">
+*Images should be pasted here*
 
-Images can be outdated
+> Images can be outdated
+
+# Themes
+
+## Shoebill
+- [Firefox](https://addons.mozilla.org/en-US/firefox/addon/shoebill-dark)
+- [Neovim](https://github.com/hugoocoto/
 
 # Installation
 
@@ -20,5 +22,3 @@ Thanks @rexim for the script
 ./deploy.sh MANIFEST
 ```
 
-It can be needed to chmod deploy script. You can edit MANIFEST to customize what is going to be symlinked. If
-a symlink or folder exists it dont override it.

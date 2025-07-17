@@ -1,0 +1,52 @@
+{
+  "manifest_version": 2,
+  "name": "Shoebill",
+  "version": "0.1",
+  "description": "Shoebill nvim theme for firefox",
+
+  "theme": {
+    "colors": {
+      "frame": "#424751",
+      "tab_background_text": "#f0f0f0",
+      "tab_text": "#f0f0f0",
+      "toolbar": "#424751",
+      "bookmark_text": "#f0f0f0",
+      "button_background_active": "222731",
+      "button_background_hover": "#222731",
+      "icons": "#f0f0f0",
+      "icons_attention": "#f0f0f0",
+      "frame_inactive": "#424751",
+      "ntp_background": "#424751",
+      "ntp_card_background": "#222731",
+      "ntp_text": "#f0f0f0",
+      "popup": "#424751",
+      "popup_text": "#f0f0f0",
+      "popup_border": "#424751",
+      "popup_highlight": "#222731",
+      "popup_highlight_text": "#f0f0f0",
+      "sidebar": "#424751",
+      "sidebar_highlight": "#222731",
+      "sidebar_highlight_text": "#f0f0f0",
+      "sidebar_text": "#f0f0f0",
+      "sidebar_border": "#424751",
+      "tab_background_separator": "#424751",
+      "tab_line": "#222731",
+      "tab_loading": "#222731",
+      "tab_selected": "#222731",
+      "toolbar_bottom_separator": "#424751",
+      "toolbar_field": "#424751",
+      "toolbar_field_text": "#f0f0f0",
+      "toolbar_field_border": "#424751",
+      "toolbar_field_border_focus": "#424751",
+      "toolbar_field_focus": "#424751",
+      "toolbar_field_highlight": "#accfff",
+      "toolbar_field_highlight_text": "#222731",
+      "toolbar_field_separator": "#424751",
+      "toolbar_field_text_focus": "#f0f0f0",
+      "toolbar_text": "#f0f0f0",
+      "toolbar_top_separator": "#424751",
+      "toolbar_vertical_separator": "#424751"
+    }
+  }
+}
+
