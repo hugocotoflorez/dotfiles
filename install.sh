@@ -6,7 +6,7 @@ function exist() { command -v "$1" >/dev/null 2>&1; }
 
 function clone_install() {
         if [ ! -d "$1" ]; then
-                git clone "https://github.com/hugocotoflorez/$1"
+                git clone "https://github.com/hugoocoto/$1"
         fi
                 cd "$1"
                 make install

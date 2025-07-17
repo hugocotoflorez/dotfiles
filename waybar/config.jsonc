@@ -11,7 +11,7 @@
         "hyprland/workspaces"
     ],
     "modules-center": [
-        "custom/clock",
+            "custom/clock",
     ],
     "modules-right": [
         "battery",
