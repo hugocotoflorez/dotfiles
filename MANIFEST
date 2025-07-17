@@ -26,3 +26,4 @@ nvim|symlink|.config
 user-dirs.dirs|symlink|.config
 user-dirs.locale|symlink|.config
 toggle_touchpad.sh|symlink|.local/bin/
+tofi|symlink|.config

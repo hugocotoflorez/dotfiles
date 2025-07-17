@@ -1,0 +1,24 @@
+drun-launch = true
+auto-accept-single = true
+
+text-color = #f0f0f0
+prompt-color = #f0f0f0
+selection-color = #accfff
+background-color = #424751
+outline-color = #aaaaaa
+
+anchor = top
+width = 60%
+height = 30
+horizontal = true
+font-size = 16
+prompt-text = "search: "
+font = Iosevka NFM
+outline-width = 1
+min-input-width = 120
+result-spacing = 15
+padding-top = 0
+padding-bottom = 0
+padding-left = 10
+padding-right = 10
+border-width = 0
